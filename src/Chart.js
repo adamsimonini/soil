@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Bubble} from 'react-chartjs-2';
+import Selector from './Selector';
 
 const data = {
   labels: ['January'],
@@ -32,7 +33,7 @@ export default class Chart extends Component{
   render() {
     return (
       <div style={{width: "50%"}}>
-        <h2>Bubble Example</h2>
+        <h2>Crop Analysis</h2><Selector />      
         <Bubble 
             data={data}
             height={300}

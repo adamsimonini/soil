@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { Button } from 'reactstrap';
 import Data from './Data';
-import Selector from './Selector';
 import Chart from './Chart';
-import logo from './logo.svg';
+import crops from './crops.png';
 import './App.css';
 
 class App extends Component {
@@ -11,11 +10,10 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <img src={crops} alt="logo" />
+          <h1 className="App-title">Crop Analysis</h1>
         </header>
         {/* <Data /> */}
-        <Selector />
         <Chart />
       </div>
     );

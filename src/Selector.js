@@ -19,7 +19,7 @@ export default class Selector extends React.Component {
 
   render() {
     return (
-      <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+      <Dropdown direction="right" isOpen={this.state.dropdownOpen} toggle={this.toggle}>
         <DropdownToggle caret>
           Quarters
         </DropdownToggle>
