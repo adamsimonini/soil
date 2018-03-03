@@ -24,7 +24,6 @@ export default class Selector extends React.Component {
           Quarters
         </DropdownToggle>
         <DropdownMenu>
-          <DropdownItem header>Select Quarter</DropdownItem>
           <DropdownItem>Q1</DropdownItem>
           <DropdownItem divider />
           <DropdownItem>Q2</DropdownItem>

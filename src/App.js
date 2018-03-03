@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Button } from 'reactstrap';
+import Layout from './Layout.js';
+import LeftNav from './LeftNav';
 import Data from './Data';
 import Chart from './Chart';
 import crops from './crops.png';
@@ -14,7 +15,7 @@ class App extends Component {
           <h1 className="App-title">Crop Analysis</h1>
         </header>
         {/* <Data /> */}
-        <Chart />
+        <Layout />
       </div>
     );
   }

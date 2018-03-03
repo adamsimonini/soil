@@ -3,3 +3,15 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+@media only screen and (min-width: 501px) {
+  .nav li{
+    margin: 3vw 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .nav li{
+    margin: 0;
+    max-height: 30px;
+  }
+}

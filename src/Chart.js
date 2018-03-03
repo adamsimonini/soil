@@ -6,7 +6,7 @@ const data = {
   labels: ['January'],
   datasets: [
     {
-      label: 'My First dataset',
+      label: 'Test Data',
       fill: false,
       lineTension: 0.1,
       backgroundColor: 'rgba(75,192,192,0.4)',
@@ -32,13 +32,13 @@ const data = {
 export default class Chart extends Component{
   render() {
     return (
-      <div style={{width: "50%"}}>
+      <div style={{width: "100%"}}>
         <h2>Crop Analysis</h2><Selector />      
         <Bubble 
             data={data}
-            height={300}
+            height={100}
             options={{
-                maintainAspectRatio: false
+                maintainAspectRatio: true
             }}
         />
       </div>
