@@ -16,7 +16,6 @@ class App extends Component {
         </header>
         {/* <Data /> */}
         <Selector />
-        <Button color="danger">Danger!</Button>
         <Chart />
       </div>
     );

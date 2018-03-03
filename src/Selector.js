@@ -1,15 +1,39 @@
-import React, { Component } from 'react';
-import Dropdown from 'react-dropdown'
-import 'react-dropdown/style.css'
+import React from 'react';
+import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
+export default class Selector extends React.Component {
+  constructor(props) {
+    super(props);
 
-export default class Selector extends Component{
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      dropdownOpen: false
+    };
+  }
+
+  toggle() {
+    this.setState({
+      dropdownOpen: !this.state.dropdownOpen
+    });
+  }
 
   render() {
     return (
-      <div>
-
-      </div>
+      <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+        <DropdownToggle caret>
+          Quarters
+        </DropdownToggle>
+        <DropdownMenu>
+          <DropdownItem header>Select Quarter</DropdownItem>
+          <DropdownItem>Q1</DropdownItem>
+          <DropdownItem divider />
+          <DropdownItem>Q2</DropdownItem>
+          <DropdownItem divider />
+          <DropdownItem>Q3</DropdownItem>
+          <DropdownItem divider />
+          <DropdownItem>Q4</DropdownItem>
+        </DropdownMenu>
+      </Dropdown>
     );
   }
-};
+}
