@@ -15,7 +15,7 @@ export default class LeftNav extends React.Component {
             <NavLink href="#"><Link to="/Chart">Crop Analysis</Link></NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#">Insurance Analysis</NavLink>
+            <NavLink href="#"><Link to="/Insurance">Insurance Analysis</Link></NavLink>
           </NavItem>
         </Nav>
       </div>
