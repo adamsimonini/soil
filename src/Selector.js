@@ -7,10 +7,15 @@ export default class Selector extends React.Component {
     super(props);
     this.toggle = this.toggle.bind(this);
     this.state = {
-      dropdownOpen: false
+      dropdownOpen: false,
+      quarter: 'Quarter',
     };
   }
-
+  _onClick(val) {
+    this.setState({
+      quarter: val,
+    });
+  }
   toggle() {
     this.setState({
       dropdownOpen: !this.state.dropdownOpen
@@ -19,18 +24,18 @@ export default class Selector extends React.Component {
 
   render() {
     return (
-      <Dropdown direction="right" isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+      <Dropdown style={{ position: 'absolute', right: 0}} direction="right" isOpen={this.state.dropdownOpen} toggle={this.toggle}>
         <DropdownToggle caret>
-          Quarters
+          {this.state.quarter}
         </DropdownToggle>
         <DropdownMenu>
-          <DropdownItem><SelectQuarter>Q1</SelectQuarter></DropdownItem>
+          <DropdownItem onClick={this._onClick.bind(this,'Q1')}>Q1</DropdownItem>
           <DropdownItem divider />
-          <DropdownItem>Q2</DropdownItem>
+          <DropdownItem onClick={this._onClick.bind(this, 'Q2')}>Q2</DropdownItem>
           <DropdownItem divider />
-          <DropdownItem>Q3</DropdownItem>
+          <DropdownItem onClick={this._onClick.bind(this, 'Q3')}>Q3</DropdownItem>
           <DropdownItem divider />
-          <DropdownItem>Q4</DropdownItem>
+          <DropdownItem onClick={this._onClick.bind(this, 'Q4')}>Q4</DropdownItem>
         </DropdownMenu>
       </Dropdown>
     );

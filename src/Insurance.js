@@ -2,6 +2,24 @@ import React, { Component } from 'react';
 import ReactBootstrapSlider from 'react-bootstrap-slider';
 import { Container, Row, Col } from 'reactstrap';
 
+    const greenLine = {
+        width: '100%',
+        height: '10px',
+        backgroundColor: 'green'
+    };
+
+    const purpleLine = {
+        width: '100%',
+        height: '10px',
+        backgroundColor: 'purple'
+    };
+
+    const blueLine = {
+        width: '100%',
+        height: '10px',
+        backgroundColor: 'blue'
+    };
+
 export default class Insurance extends Component{
   render() {
     return (
@@ -28,7 +46,6 @@ export default class Insurance extends Component{
                     <Col xs="6" md="2" className="crop">
                         <img src={require('./images/banana.png')} />
                         BANANA
-                        <br />
                     </Col>
                 </Row>
             </Container>
@@ -44,7 +61,39 @@ export default class Insurance extends Component{
             reversed={true}
         /> 
 
-        <h3 id="purchase" class="tl">Purchase Insurance Plan</h3> 
+        <h3 id="purchase" class="tl">Purchase Insurance Plan</h3>
+        <p className="tl">The following are recommended insurance plans based on your crop of choice:</p>
+                      <Row className="purchaseRow mb3">
+                        <Col xs="4">
+                            <div className="plan">
+                                <div style={greenLine} ></div>
+                                <div className="innerDiv">
+                                    <p> Basic Yield Protection</p>
+                                    <p>Covers 30% loss of miniumum projected crop yield due to drought</p>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col xs="4">
+                            <div className="plan">
+                            <div style={purpleLine} ></div>
+                                <div className="innerDiv">
+                                    <p>Best Value Yield Protection</p>
+                                    <p>Covers 80% loss of miniumum projected crop yield due to drought, 
+                                        natural disasters, and pests</p>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col xs="4">
+                            <div className="plan">
+                                <div style={blueLine} ></div>
+                                <div className="innerDiv">
+                                    <p>Premium Yield Protection</p>
+                                    <p>Covers 100% loss of miniumum projected crop yield due to drought, 
+                                        natural disasters, and pests</p>
+                                </div>
+                            </div>
+                        </Col>
+                </Row>
       </div>
     );
   }
