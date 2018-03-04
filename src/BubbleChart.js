@@ -116,8 +116,8 @@ export default class BubbleChart extends Component {
         </div>
         <div style={{height: '40px', display: 'flex', paddingTop: '430px'}}>
             <div style={{width: '35px'}}> </div>
-            <div style={{width: '25%', height: '100%', textAlign: 'left'}}>0</div>
-            <div style={{width: '25%', height: '100%', textAlign: 'left'}}>1</div>
+            <div style={{width: '30%', height: '100%', textAlign: 'left'}}>0</div>
+            <div style={{width: '30%', height: '100%', textAlign: 'left'}}>1</div>
             <div style={{width: '25%', height: '100%', textAlign: 'left'}}>2</div>
             <div style={{width: '25%', height: '100%', textAlign: 'left'}}>3</div>
             <div style={{width: '25%', height: '100%', textAlign: 'left'}}>4</div>
