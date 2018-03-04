@@ -37,18 +37,18 @@ export default class Insurance extends Component{
                 },
                 {
                     name: 'EGGPLANT', 
-                    link: './images/corn.png',
-                    active: './images/whitecorn.png'
+                    link: './images/eggplant.png',
+                    active: './images/eggwhite.png'
                 },
                 {
                     name: 'GRAPES', 
-                    link: './images/corn.png',
-                    active: './images/whitecorn.png'
+                    link: './images/grape.png',
+                    active: './images/grapewhite.png'
                 },
                 {
                     name: 'BANANA', 
-                    link: './images/corn.png',
-                    active: './images/whitecorn.png'
+                    link: './images/banana.png',
+                    active: './images/bananawhite.png'
                 }
             ]   
         }
@@ -74,7 +74,7 @@ export default class Insurance extends Component{
                 </Row>
             </Container>
 
-        <h3 id="forcast" class="tl">Insurance Forcast</h3>
+        <h3 id="forcast" class="tl">Annual Insurance Forcast</h3>
         <ReactBootstrapSlider
             value={50}
             // slideStop={() => ()}
