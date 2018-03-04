@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactBootstrapSlider from 'react-bootstrap-slider';
 import { Container, Row, Col } from 'reactstrap';
+import CropCard from './CropCard';
 
     const greenLine = {
         width: '100%',
@@ -21,38 +22,61 @@ import { Container, Row, Col } from 'reactstrap';
     };
 
 export default class Insurance extends Component{
+    constructor(props){
+        super(props);
+        this.state = {data: [
+                {
+                    name: 'CORN', 
+                    link: './images/corn.png',
+                    active: './images/whitecorn.png'
+                },
+                {
+                    name: 'WHEAT', 
+                    link: './images/wheat.png',
+                    active: './images/whitewheat.png'
+                },
+                {
+                    name: 'EGGPLANT', 
+                    link: './images/corn.png',
+                    active: './images/whitecorn.png'
+                },
+                {
+                    name: 'GRAPES', 
+                    link: './images/corn.png',
+                    active: './images/whitecorn.png'
+                },
+                {
+                    name: 'BANANA', 
+                    link: './images/corn.png',
+                    active: './images/whitecorn.png'
+                }
+            ]   
+        }
+    }
+
+    _onBlur(e){
+        e.preventDefault();
+    }
+
   render() {
+        let data = this.state
+        console.log(data)
     return (
       <div class="pl5" style={{width: "100%"}}>
         <h2 id="insuring" class="tl">Insuring Your Crops</h2> 
             <Container>
                 <Row>
-                    <Col xs="6" md="2" className="crop">
-                        <img src={ require('./images/corn.png') } />
-                        CORN
-                    </Col>
-                    <Col xs="6" md="2" className="crop">
-                        <img src={require('./images/wheat.png')} />
-                        WHEAT
-                    </Col>
-                    <Col xs="6" md="2" className="crop">
-                        <img src={require('./images/eggplant.png')} />
-                        EGGPLANT
-                    </Col>
-                    <Col xs="6" md="2" className="crop">
-                        <img src={require('./images/grape.png')} />
-                        GRAPES
-                    </Col>
-                    <Col xs="6" md="2" className="crop">
-                        <img src={require('./images/banana.png')} />
-                        BANANA
-                    </Col>
+                    {this.state.data && this.state.data.map(
+                        (obj,index)=>{
+                            return <CropCard name={obj.name} link={obj.link} active={obj.active} />
+                        }
+                    )}
                 </Row>
             </Container>
 
         <h3 id="forcast" class="tl">Insurance Forcast</h3>
         <ReactBootstrapSlider
-            value={100}
+            value={50}
             // slideStop={() => ()}
             step={1}
             max={100}
@@ -71,6 +95,9 @@ export default class Insurance extends Component{
                                     <p> Basic Yield Protection</p>
                                     <p>Covers 30% loss of miniumum projected crop yield due to drought</p>
                                 </div>
+                                <div className="tc">
+                                    <span >$90</span><span>$/month</span>
+                                </div>
                             </div>
                         </Col>
                         <Col xs="4">
@@ -80,6 +107,9 @@ export default class Insurance extends Component{
                                     <p>Best Value Yield Protection</p>
                                     <p>Covers 80% loss of miniumum projected crop yield due to drought, 
                                         natural disasters, and pests</p>
+                                    <div className="tc">
+                                        <span >$140</span><span>$/month</span>
+                                    </div>
                                 </div>
                             </div>
                         </Col>
@@ -90,6 +120,9 @@ export default class Insurance extends Component{
                                     <p>Premium Yield Protection</p>
                                     <p>Covers 100% loss of miniumum projected crop yield due to drought, 
                                         natural disasters, and pests</p>
+                                    <div className="tc">
+                                        <span >$220</span><span>$/month</span>
+                                    </div>
                                 </div>
                             </div>
                         </Col>
