@@ -6,11 +6,12 @@ import Chart from './Chart';
 import Leaf from './images/Leaf.png';
 import './App.css';
 
+
 class App extends Component {
+
   render() {
     return (
       <div className="App">
-        {/* <Data /> */}
         <Layout />
       </div>
     );

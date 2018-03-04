@@ -144,3 +144,76 @@ h5{
 #forcast, #purchase{
   margin-top: 6vw;
 }
+
+/**
+* Chart Css
+*/
+
+.chartContainer {
+  position: relative;
+}
+
+.chartBack,
+.chartFront {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.chartFront {
+  z-index: 100;
+}
+
+.chartFrontFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 420px;
+}
+
+.chartFooter {
+  height: '40px';
+  display: 'flex';
+  padding-top: 420px;
+}
+
+.footerPipe {
+  width: '25%';
+  height: '100%';
+  text-align: 'left';
+}
+
+.chartDivisionsGroup {
+  border-left: '1px solid black';
+  border-bottom: '1px solid black';
+  height: '400px';
+  width: '100%';
+  display: 'flex';
+  padding-left: '10px';
+}
+
+.chartDivisions {
+  border-right: '1px solid black';
+  width: '25%';
+  height: '100%';
+}
+
+.demandDivisions {
+  height: '14%';
+}
+
+/**
+* Override tooltip styling
+*/
+
+.__react_component_tooltip.type-error.show {
+  background-color: #FFF;
+  box-shadow: -1px -1px 13px 0px rgba(209,207,209,1);
+}
+.__react_component_tooltip.type-error.place-top:after,
+.__react_component_tooltip.type-error.place-top.show:after {
+  border-top-color: transparent;
+}
