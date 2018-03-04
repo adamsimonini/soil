@@ -6,7 +6,7 @@ body {
 
 @media only screen and (min-width: 501px) {
   .nav li{
-    padding: 3vw 0;
+    padding: 2vw 0;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -23,6 +23,10 @@ body {
   #insuring, #forcast, #purchase{
     text-align: center;
   }
+}
+
+.active{
+  background-color: red;
 }
 
 @media only screen and (min-width: 575px) {
@@ -89,6 +93,11 @@ body {
 
 .plan p:nth-child(2){
   font-size: 12px;
+  font-weight: 100;
+}
+
+.plan span:first-of-type{
+  font-size: 25px;
   font-weight: 100;
 }
 
