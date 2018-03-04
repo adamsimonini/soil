@@ -28,27 +28,27 @@ export default class Insurance extends Component{
                 {
                     name: 'CORN', 
                     link: './images/corn.png',
-                    active: './image/whitecorn.png'
+                    active: './images/whitecorn.png'
                 },
                 {
                     name: 'WHEAT', 
                     link: './images/wheat.png',
-                    active: './image/whitewheat.png'
+                    active: './images/whitewheat.png'
                 },
                 {
                     name: 'EGGPLANT', 
                     link: './images/corn.png',
-                    active: './image/whitecorn.png'
+                    active: './images/whitecorn.png'
                 },
                 {
                     name: 'GRAPES', 
                     link: './images/corn.png',
-                    active: './image/whitecorn.png'
+                    active: './images/whitecorn.png'
                 },
                 {
                     name: 'BANANA', 
                     link: './images/corn.png',
-                    active: './image/whitecorn.png'
+                    active: './images/whitecorn.png'
                 }
             ]   
         }
