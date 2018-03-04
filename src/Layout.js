@@ -25,16 +25,17 @@ export default class Layout extends React.Component {
       <Container>
         <Row>
             <Col xs="12" sm="2"><img src={Leaf} /></Col>
-            <Col xs="12" sm="10"></Col>
+            <Col xs="12" sm="6"></Col>
         </Row>
         <Router>
             <Row>
                 <Col xs="12" sm="2"><LeftNav /></Col>
-                <Col xs="12" sm="10">
+                <Col xs="12" sm="8">
                         <Route exact path="/" component={this.Page0} /> 
                         <Route path="/Chart" component={this.Page1} />
                         <Route path="/Insurance" component={this.Page2} />
                   </Col>
+                  <Col xs="12" sm="2"></Col>
             </Row>
         </Router>
       </Container>
