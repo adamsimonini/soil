@@ -1,10 +1,10 @@
 import React from 'react';
+import SelectQuarter from './SelectQuarter';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
 export default class Selector extends React.Component {
   constructor(props) {
     super(props);
-
     this.toggle = this.toggle.bind(this);
     this.state = {
       dropdownOpen: false
@@ -24,7 +24,7 @@ export default class Selector extends React.Component {
           Quarters
         </DropdownToggle>
         <DropdownMenu>
-          <DropdownItem>Q1</DropdownItem>
+          <DropdownItem><SelectQuarter>Q1</SelectQuarter></DropdownItem>
           <DropdownItem divider />
           <DropdownItem>Q2</DropdownItem>
           <DropdownItem divider />

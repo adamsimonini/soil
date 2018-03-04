@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import Layout from './Layout.js';
-import crops from './crops.png';
+import LeftNav from './LeftNav';
+import Data from './Data';
+import Chart from './Chart';
+import Crops from './images/Crops.png';
 import './App.css';
+
 
 class App extends Component {
 
@@ -9,7 +13,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={crops} alt="logo" />
+          <img src={Crops} alt="logo" />
           <h1 className="App-title">Crop Analysis</h1>
         </header>
         <Layout />

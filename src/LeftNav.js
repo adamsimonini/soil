@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { Nav, NavItem, NavLink } from 'reactstrap';
+import Leaf from './images/Leaf.png';
 
 export default class LeftNav extends React.Component {
   render() {
     return (
       <div>
-        <p>Data</p>
+        <img src={Leaf} />
         <Nav vertical>
           <NavItem>
             <NavLink href="#"><Link to="/">Profile</Link></NavLink>
