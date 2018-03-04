@@ -53,7 +53,8 @@ export default class Layout extends React.Component {
 
     const farmer = {
         maxWidth: '70px',
-        borderRadius: "30px"
+        borderRadius: "30px",
+        border: "solid black 3px"
     };
 
     const dateToFormat = '1976-04-19T12:59-0500';
