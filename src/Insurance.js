@@ -28,7 +28,6 @@ export default class Insurance extends Component{
                         <Col xs="6" md="2" className="crop">
                             <img src={require('./images/banana.png')} />
                             BANANA
-                            <br />
                         </Col>
                 </Row>
             </Container>
