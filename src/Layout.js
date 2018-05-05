@@ -3,8 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Chart from './Chart';
 import LeftNav from './LeftNav';
-import Insurance from './Insurance';
-import Leaf from './images/Leaf.png';
+import Featured from './Featured';
 import Moment from 'react-moment';
 
 export default class Layout extends React.Component {
@@ -41,47 +40,22 @@ export default class Layout extends React.Component {
     );
 
     Page2 = () => (
-        <Insurance />
+        <Featured />
      );
 
 
   render() {
-
-    const location = {
-        maxWidth: '30px',
-    };
-
-    const farmer = {
-        maxWidth: '70px',
-        borderRadius: "30px",
-        border: "solid black 3px"
-    };
-
-    const dateToFormat = '1976-04-19T12:59-0500';
-
     return (
       <Container>
-        <Row className="mt2 items-center">
-            <Col xs="12" sm="2"><img src={Leaf} /></Col>
-            <Col xs="12" sm="5"></Col>
-            <Col xs="12" sm="1">
-                22/06/2441
-                {/* <Moment interval={1000} format="DD/MM/YYYY HH:mm:ss">
-                </Moment> */}
-
-            </Col>
-            <Col className="location" xs="12" sm="2"><img style={location} src={ require('./images/location.png') } />New New Mexico</Col>
-            <Col xs="12" sm="2"><img style={farmer} src={ require('./images/Sam.png') } /></Col>
-        </Row>
         <Router>
             <Row>
                 <Col xs="12" sm="2"><LeftNav /></Col>
-                <Col xs="12" sm="8">
-                        <Route exact path="/" component={this.Page0} /> 
-                        <Route path="/Chart" component={this.Page1} />
-                        <Route path="/Insurance" component={this.Page2} />
-                  </Col>
-                  <Col xs="12" sm="2"></Col>
+                <Col xs="12" sm="10">
+                    <span class="title">Adam Simonini</span>
+                    <Route exact path="/" component={this.Page0} /> 
+                    <Route path="/Chart" component={this.Page1} />
+                    <Route path="/Featured" component={this.Page2} />
+                </Col>
             </Row>
         </Router>
       </Container>
