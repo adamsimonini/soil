@@ -59,13 +59,11 @@ export default class Insurance extends Component{
     }
 
   render() {
-        let data = this.state
-        console.log(data)
     return (
       <div class="pl5" style={{width: "100%"}}>
         <h2 id="insuring" class="tl">Insuring Your Crops</h2> 
             <Container>
-                <Row>
+                <Row className="cardRow">
                     {this.state.data && this.state.data.map(
                         (obj,index)=>{
                             return <CropCard name={obj.name} link={obj.link} active={obj.active} />

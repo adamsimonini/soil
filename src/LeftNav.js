@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import { Nav, NavItem, NavLink } from 'reactstrap';
 
 export default class LeftNav extends React.Component {
@@ -8,13 +7,13 @@ export default class LeftNav extends React.Component {
       <div>
         <Nav vertical>
           <NavItem>
-            <NavLink href="#"><Link to="/">Profile</Link></NavLink>
+            <NavLink href="/">Profile</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#"><Link to="/Chart">Crop Analysis</Link></NavLink>
+            <NavLink href="/Chart">Crop Analysis</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#"><Link to="/Insurance">Insurance Analysis</Link></NavLink>
+            <NavLink href="/Insurance">Insurance Analysis</NavLink>
           </NavItem>
         </Nav>
       </div>

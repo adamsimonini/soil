@@ -5,7 +5,6 @@ import Chart from './Chart';
 import LeftNav from './LeftNav';
 import Insurance from './Insurance';
 import Leaf from './images/Leaf.png';
-import Moment from 'react-moment';
 
 export default class Layout extends React.Component {
 
@@ -15,23 +14,23 @@ export default class Layout extends React.Component {
                 display: 'block',
                 height: '200px',
                 }}>
-                <img width="400px" style={{float:'left'}} src={require('./images/weather.png')}/>
+                <img width="400px" style={{float:'left'}} alt="weather" src={require('./images/weather.png')}/>
             </div>
             <div><p style={{
                 float: 'left',
                 paddingLeft: '10px',
                 fontSize: '24px'
                 }}> Commodity </p></div>
-            <img width="100%" src={require('./images/chart.png')}/>
+            <img alt="chart" width="100%" src={require('./images/chart.png')}/>
             <div><p style={{
                 float: 'left',
                 paddingLeft: '10px',
                 fontSize: '24px'
                 }}> News </p></div>
             <div width="100%" style={{display: '-webkit-inline-box', marginLeft: '-18px', paddingTop: '10px'}}>
-            <img width="300px" src={require('./images/news1.png')}/>
-            <img width="300px"  src={require('./images/news2.png')}/>
-            <img width="300px"  src={require('./images/news3.png')}/>
+            <img width="300px" alt="news1" src={require('./images/news1.png')}/>
+            <img width="300px" alt="news2" src={require('./images/news2.png')}/>
+            <img width="300px" alt="news3" src={require('./images/news3.png')}/>
             </div>
         </div>
     );
@@ -57,21 +56,16 @@ export default class Layout extends React.Component {
         border: "solid black 3px"
     };
 
-    const dateToFormat = '1976-04-19T12:59-0500';
-
     return (
       <Container>
         <Row className="mt2 items-center">
-            <Col xs="12" sm="2"><img src={Leaf} /></Col>
+            <Col xs="12" sm="2"><img alt="leaf" src={Leaf} /></Col>
             <Col xs="12" sm="5"></Col>
             <Col xs="12" sm="1">
                 22/06/2441
-                {/* <Moment interval={1000} format="DD/MM/YYYY HH:mm:ss">
-                </Moment> */}
-
             </Col>
-            <Col className="location" xs="12" sm="2"><img style={location} src={ require('./images/location.png') } />New New Mexico</Col>
-            <Col xs="12" sm="2"><img style={farmer} src={ require('./images/Sam.png') } /></Col>
+            <Col className="location" xs="12" sm="2"><img alt="location" style={location} src={ require('./images/location.png') } />New New Mexico</Col>
+            <Col xs="12" sm="2"><img alt="farmer" style={farmer} src={ require('./images/Sam.png') } /></Col>
         </Row>
         <Router>
             <Row>

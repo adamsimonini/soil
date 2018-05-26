@@ -54,6 +54,14 @@ body {
   align-items: stretch;
 }
 
+.cardRow{
+  justify-content: space-around;
+}
+
+.cardRow div{
+  margin-top: 10px;
+}
+
 .crop{
   padding-bottom: 1vw;
   min-width: 150px;

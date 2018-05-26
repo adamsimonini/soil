@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
 import Layout from './Layout.js';
-import LeftNav from './LeftNav';
-import Data from './Data';
-import Chart from './Chart';
-import Leaf from './images/Leaf.png';
 import './App.css';
 
 
