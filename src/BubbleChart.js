@@ -76,7 +76,7 @@ export default class BubbleChart extends Component {
                             backgroundColor: obj.color,
                             alignSelf: obj.position, 
                         }}>
-                        <a data-tip data-for={obj.type}> <img alt="bubble chart" src={require(''+obj.image)}/></a>
+                        <a data-tip data-for={obj.type}> <img src={require(''+obj.image)}/></a>
                         <ReactTooltip id={obj.type} type='error'>
                             <span style={{fontSize: '14px', color: '#CBC9C9'}}>{obj.type} yield</span>
                             <br />

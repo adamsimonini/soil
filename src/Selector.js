@@ -1,4 +1,5 @@
 import React from 'react';
+import SelectQuarter from './SelectQuarter';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
 export default class Selector extends React.Component {

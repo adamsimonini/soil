@@ -26,11 +26,12 @@ export default class CropCard extends Component{
     }
 
     render() {
+        console.log(this.props.name)
         let image = require("" + (this.state.active ? this.props.active : this.props.link))
         return (
             <div tabIndex={0}
                 onBlur={this._onBlur.bind(this)} onClick={this._onClick.bind(this)} xs="6" md="2" className={(this.state.active) ? 'active crop' : 'crop'}>
-            <img alt="crop" src={image} />
+            <img src={image} />
                 {this.props.name}
             </div>
         )

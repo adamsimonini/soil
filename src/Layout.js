@@ -14,23 +14,23 @@ export default class Layout extends React.Component {
                 display: 'block',
                 height: '200px',
                 }}>
-                <img width="400px" style={{float:'left'}} alt="weather" src={require('./images/weather.png')}/>
+                <img width="400px" style={{float:'left'}} src={require('./images/weather.png')}/>
             </div>
             <div><p style={{
                 float: 'left',
                 paddingLeft: '10px',
                 fontSize: '24px'
                 }}> Commodity </p></div>
-            <img alt="chart" width="100%" src={require('./images/chart.png')}/>
+            <img width="100%" src={require('./images/chart.png')}/>
             <div><p style={{
                 float: 'left',
                 paddingLeft: '10px',
                 fontSize: '24px'
                 }}> News </p></div>
             <div width="100%" style={{display: '-webkit-inline-box', marginLeft: '-18px', paddingTop: '10px'}}>
-            <img width="300px" alt="news1" src={require('./images/news1.png')}/>
-            <img width="300px" alt="news2" src={require('./images/news2.png')}/>
-            <img width="300px" alt="news3" src={require('./images/news3.png')}/>
+            <img width="300px" src={require('./images/news1.png')}/>
+            <img width="300px"  src={require('./images/news2.png')}/>
+            <img width="300px"  src={require('./images/news3.png')}/>
             </div>
         </div>
     );

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {findDOMNode} from 'react-dom';
 import Selector from './Selector';
 import ChartVisible from './ChartVisible';
 
