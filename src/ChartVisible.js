@@ -1,6 +1,5 @@
 
 import { connect } from 'react-redux';
-import { selectQuarter } from './actions/quarter';
 import BubbleChart from './BubbleChart';
 
 const getData = (quarter, value) => {

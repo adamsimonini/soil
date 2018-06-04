@@ -9,7 +9,7 @@ export default class LeftNav extends React.Component {
     return (
       <div>
         <Nav vertical>
-          <div>
+          <div style={{ marginBottom: 10}}>
             <img id="owl" src={Owl} />
           </div>
           <Row>
@@ -36,11 +36,6 @@ export default class LeftNav extends React.Component {
             <Col xs="6" sm="12">
               <NavItem>
                 <NavLink href="#"><Link to="/Chart">Hackathons</Link></NavLink>
-              </NavItem>
-            </Col>
-            <Col xs="6" sm="12">
-              <NavItem>
-                <NavLink href="#"><Link to="/Chart">Websites</Link></NavLink>
               </NavItem>
             </Col>
           </Row>
