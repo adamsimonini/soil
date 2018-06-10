@@ -119,6 +119,22 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 575px) {
+  .leftNav{
+    max-width: 100%;
+    height: unset;
+    position: unset;
+  }
+  .nav{
+    width: 80%;
+  }
+  .nav li{
+    padding: 2vw 0;
+  }
+  .nav-item{
+    min-height: 50px;
+  }
+}
 
 .purchaseRow{
   display: flex;
@@ -182,6 +198,7 @@ body {
 
 .nav{
   min-width: 100px;
+  width: 100%;
 }
 
 .nav a{
