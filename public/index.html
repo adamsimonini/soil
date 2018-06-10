@@ -9,12 +9,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <title>Adam Simonini</title>
-  
-    <!-- <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css"/> -->
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/> 
-   </head>
+     </head>
   <body>
     <div id="root"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script>
+      window.addEventListener("resize", function(){
+        if(window.innerWidth > 575){
+          document.getElementById("hamburger").style.display = "none";
+          document.getElementById("close").style.display = "none";
+          document.getElementById("navBox").style.display = "unset";
+        }
+        else{
+          document.getElementById("hamburger").style.display = "unset";
+          document.getElementById("hamburger").style.display = "unset";
+          document.getElementById("navBox").style.display = "none";
+        }
+      });
+    </script>
   </body>
 </html>

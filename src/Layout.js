@@ -27,7 +27,7 @@ export default class Layout extends React.Component {
             <Row>
                 <Col xs="12" className="leftNav"><LeftNav /></Col>
                 <Col xs="12" sm={{ size: 10, offset: 2 }}>
-                    <span class="title">Adam Simonini</span>
+                    <span className="title">Adam Simonini</span>
                     <Route exact path="/" component={this.Page0} /> 
                     <Route path="/Chart" component={this.Page1} />
                     <Route path="/Featured" component={this.Page2} />

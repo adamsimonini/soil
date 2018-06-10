@@ -124,9 +124,10 @@ body {
     max-width: 100%;
     height: unset;
     position: unset;
+    margin-top: 10px;
   }
   .nav{
-    width: 80%;
+    width: 80% !important;
   }
   .nav li{
     padding: 2vw 0;
@@ -135,7 +136,23 @@ body {
     min-height: 50px;
   }
 }
-
+@media (min-width: 576px) {
+  #hamburger{
+    display: none;
+  }
+  #close{
+    display: none;
+  }
+}
+#hamburger, #close{
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    font-size: 25px;
+}
+#hamburger:hover, #close:hover{
+  cursor: pointer;
+}
 .purchaseRow{
   display: flex;
   flex-direction: row;
