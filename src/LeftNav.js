@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import { Nav, NavItem, NavLink } from 'reactstrap';
+import { Nav, NavItem } from 'reactstrap';
 import Owl from './images/owl.png';
 
 
@@ -22,23 +22,23 @@ export default class LeftNav extends React.Component {
         	<span id="hamburger" onClick={this.openNav}>&#9776;</span>
           <span id="close" onClick={this.closeNav} style={{display: 'none'}}>X</span>
           <div style={{ marginBottom: 10}}>
-            <img id="owl" src={Owl} />
+            <img id="owl" src={Owl} alt="Owl Logo"/>
           </div>
           <div id="navBox">
             <NavItem>
-              <NavLink href="#"><Link to="/Featured">Featured Projects</Link></NavLink>
+              <Link to="/Featured">Featured Projects</Link>
             </NavItem>
             <NavItem>
-              <NavLink href="#"><Link to="/Chart">Work Projects</Link></NavLink>
+              <Link to="/Work">Work Projects</Link>
             </NavItem>
             <NavItem>
-              <NavLink href="#"><Link to="/Chart">Web Apps</Link></NavLink>
+              <Link to="/WebApps">Web Apps</Link>
             </NavItem>
             <NavItem>
-              <NavLink href="#"><Link to="/Chart">About Me</Link></NavLink>
+              <Link to="/AboutMe">About Me</Link>
             </NavItem>
             <NavItem style={{borderBottom: 0}}>
-              <NavLink href="#"><Link to="/Chart">Hackathons</Link></NavLink>
+              <Link to="/Hackathons">Hackathons</Link>
             </NavItem>
           </div>
         </Nav>

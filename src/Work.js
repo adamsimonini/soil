@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-export default class WebApps extends Component{
+export default class Work extends Component{
 
   render() {
     return (
-        <h1>WebApps</h1>
+        <h1>Work!</h1>
     );
   }
 };

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Tilt from 'react-tilt'
 
 const hyperlink = {
@@ -8,7 +8,7 @@ const hyperlink = {
 
 const Card = ({props}) => (
     <a style={hyperlink} href="www.google.com" target='_blank'>
-        <div class="cardGrid">
+        <div className="cardGrid">
             <span className="cardName">{props.name}</span>
             <Tilt className="Tilt" options={{ max:30, scale:1.05}} style={{ height: 250, width: 200 }}>
                 <img className="galaxyImage js-tilt" src={props.image} alt="featured project"/>

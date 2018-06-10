@@ -9,13 +9,13 @@ import Yorkdale from './images/yorkdale.png';
 export default class Featured extends Component{
 
   render() {
-    const html = <i style={{width: 100}} class="devicon-html5-plain-wordmark colored"></i>;
-    const css = <i class="devicon-css3-plain-wordmark colored"></i>;
-    const jquery = <i class="devicon-jquery-plain-wordmark colored"></i>;
-    const react = <i class="devicon-react-plain-wordmark colored"></i>;
-    const bootstrap = <i class="devicon-bootstrap-plain-wordmark colored"></i>;
-    const javascript = <i class="devicon-javascript-plain colored"></i>;
-    const foundation = <i class="devicon-foundation-plain-wordmark colored"></i>;
+    const html = <i style={{width: 100}} className="devicon-html5-plain-wordmark colored"></i>;
+    const css = <i className="devicon-css3-plain-wordmark colored"></i>;
+    const jquery = <i className="devicon-jquery-plain-wordmark colored"></i>;
+    // const react = <i className="devicon-react-plain-wordmark colored"></i>;
+    const bootstrap = <i className="devicon-bootstrap-plain-wordmark colored"></i>;
+    const javascript = <i className="devicon-javascript-plain colored"></i>;
+    const foundation = <i className="devicon-foundation-plain-wordmark colored"></i>;
 
     const cards = [
         {
@@ -44,23 +44,23 @@ export default class Featured extends Component{
         },
     ];
     return (
-        <div class="container">
-        <Row>
-            <Col xs="12" md="6">
-                <Card props={cards[0]}/>
-            </Col>
-            <Col xs="12" md="6">
-                <Card props={cards[1]}/>
-            </Col>
-        </Row>
-        <Row>
-            <Col xs="12" md="6">
-                <Card props={cards[2]}/>
-            </Col>
-            <Col xs="12" md="6">
-                <Card props={cards[3]}/>
-            </Col>
-        </Row>
+        <div className="container">
+            <Row>
+                <Col xs="12" md="6">
+                    <Card props={cards[0]}/>
+                </Col>
+                <Col xs="12" md="6">
+                    <Card props={cards[1]}/>
+                </Col>
+            </Row>
+            <Row>
+                <Col xs="12" md="6">
+                    <Card props={cards[2]}/>
+                </Col>
+                <Col xs="12" md="6">
+                    <Card props={cards[3]}/>
+                </Col>
+            </Row>
         </div>
     );
   }
