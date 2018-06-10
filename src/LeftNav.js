@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Nav, NavItem, NavLink } from 'reactstrap';
 import Owl from './images/owl.png';
-import { Row, Col } from 'reactstrap';
 
 
 export default class LeftNav extends React.Component {

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import Layout from './Layout.js';
-import LeftNav from './LeftNav';
-import Chart from './Chart';
 import './App.css';
 
 
