@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Chart from './Chart';
 import LeftNav from './LeftNav';
 import Featured from './Featured';
 
@@ -12,7 +11,7 @@ export default class Layout extends React.Component {
     );
 
     Page1 = () => (
-       <Chart />
+        <Featured />
     );
 
     Page2 = () => (
@@ -29,8 +28,8 @@ export default class Layout extends React.Component {
                 <Col xs="12" sm={{ size: 10, offset: 2 }}>
                     <span className="title">Adam Simonini</span>
                     <Route exact path="/" component={this.Page0} /> 
-                    <Route path="/Chart" component={this.Page1} />
-                    <Route path="/Featured" component={this.Page2} />
+                    <Route path="/" component={this.Page1} />
+                    <Route path="/" component={this.Page2} />
                 </Col>
             </Row>
         </Router>
