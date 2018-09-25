@@ -22,9 +22,9 @@ export default class LeftNav extends React.Component {
         	<span id="hamburger" onClick={this.openNav}>&#9776;</span>
           <span id="close" onClick={this.closeNav} style={{display: 'none'}}>X</span>
           <div style={{ marginBottom: 10}}>
-            <img id="owl" src={Owl} alt="Owl Logo"/>
           </div>
           <div id="navBox">
+            <img id="owl" src={Owl} alt="Owl Logo"/>
             <NavItem>
               <Link to="/Featured">Featured Projects</Link>
             </NavItem>
