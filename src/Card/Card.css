@@ -64,10 +64,10 @@
   }
 
   @media only screen and (max-width: 575px) {
-    .aboutMeFlex{
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      max-height: 30vh;
+    .cardGrid{
+        grid-template-columns: 1fr;
+    }
+    .cardDescription{
+        display: none;
     }
   }

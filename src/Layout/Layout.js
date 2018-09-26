@@ -7,6 +7,7 @@ import Work from '../Work/Work';
 import WebApps from '../WebApps';
 import AboutMe from '../About/About';
 import Hackathons from '../Hackathons/Hackathons';
+import './Layout.css';
 
 export default class Layout extends React.Component {
   render() {
@@ -15,7 +16,7 @@ export default class Layout extends React.Component {
         <Router>
             <Row>
                 <Col xs="12" className="leftNav"><LeftNav /></Col>
-                <Col xs="12" sm={{ size: 10, offset: 2 }} style={{marginTop: 70}}>
+                <Col id="main-content" xs="12" sm={{ size: 10, offset: 2 }}>
                 {/* <span className="title">Adam Simonini</span> */}
                 <Switch>
                     <Route key="0" exact path="/abv" component={Featured}/> 

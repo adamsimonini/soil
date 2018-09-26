@@ -32,7 +32,7 @@ export default class Featured extends Component{
         },
         {
             name: "JS Calculator",
-            technology: [javascript, bootstrap, css],
+            technology: [javascript, bootstrap, html, css],
             image: Calculator,
             description: 'A simple javascript calculator. I leveraged the style libraries "tachyons" and "tilt.js" to add responsiveness and on hover styles.'
         },

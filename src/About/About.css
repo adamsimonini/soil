@@ -1,0 +1,176 @@
+.headshot{
+    border-radius: 100px;
+    max-width: 200px;
+}
+
+#skill-box{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+#tool-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    font-size: 60px;
+}
+
+#skill-box i{
+    font-size: 60px;
+}
+
+.skill-col{
+    margin-bottom: 20px;
+}
+
+.full-name span {
+    display:inline-block;
+    width: 20px;
+    color: black;
+    transform-origin: 50% 70%;
+    margin-right: 1.5%;
+    font-size: calc(12px + 2.5vw);
+  }
+
+  .about-title{
+    background-color: #edefef;
+    margin: 15px 0;
+  }
+  
+  .main-screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+  
+  .carousel-item{
+      max-width: 100px;
+      height: auto;
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+  
+  .main-screen p{
+    color: white;
+  }
+    
+  .full-name span:nth-child(1) {
+   animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) both,
+              flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2s forwards,
+              drop 4s 4s forwards;
+  }
+  
+  .full-name span:nth-child(2) {
+   animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) .2s both,
+              flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2.2s forwards,
+              drop 4s 4.2s forwards;
+  }
+  
+  .full-name span:nth-child(3) {
+   animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) .4s both,
+              flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2.4s forwards,
+              drop 4s 4.4s forwards;
+  }
+  
+  .full-name span:nth-child(4) {
+   animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) .6s both,
+              flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2.6s forwards,
+              drop 4s 4.6s forwards;
+  }
+  
+  .full-name span:nth-child(5) {
+     margin-right:30px;
+     animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) .8s both,
+                flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2.8s forwards,
+                drop 4s 4.8s forwards;
+  }
+  
+  .full-name span:nth-child(6) {
+     animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) 1s both,
+                flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 3s forwards,
+                drop 4s 5s forwards;
+  }
+  
+  .full-name span:nth-child(7) {
+     animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) 1.2s both,
+                flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 3.2s forwards,
+                drop 4s 5.2s forwards;
+  }
+  
+  .full-name span:nth-child(8) {
+     animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) 1.4s both,
+                flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 3.4s forwards,
+                drop 4s 5.4s forwards;
+  }
+  
+  .full-name span:nth-child(9) {
+     animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) 1.6s both,
+                flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 3.6s forwards,
+                drop 4s 5.6s forwards;
+  }
+  
+  .full-name span:nth-child(10) {
+    animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) 1.8s both,
+               flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 3s forwards,
+               drop 4s 5s forwards;
+  }
+  
+  .full-name span:nth-child(11) {
+    animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) 2s both,
+               flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 3.2s forwards,
+               drop 4s 5.2s forwards;
+  }
+  
+  .full-name span:nth-child(12) {
+    animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) 2.2s both,
+               flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 3.4s forwards,
+               drop 4s 5.4s forwards;
+  }
+  
+  .full-name span:nth-child(13) {
+    animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) 2.4s both,
+               flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 3.6s forwards,
+               drop 4s 5.6s forwards;
+  }
+  
+  @keyframes flipUp {
+   from {transform: rotateX(90deg);}
+   to {transform: rotateX(0deg);}
+  }
+  
+  
+  .technology span:nth-child(1) {
+    animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) both,
+               flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2s forwards,
+               drop 4s 4s forwards;
+   }
+   
+   .technology span:nth-child(2) {
+    animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) .2s both,
+               flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2.2s forwards,
+               drop 4s 4.2s forwards;
+   }
+   
+   .technology span:nth-child(3) {
+    animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) .4s both,
+               flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2.4s forwards,
+               drop 4s 4.4s forwards;
+   }
+   
+   .technology span:nth-child(4) {
+    animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) .6s both,
+               flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2.6s forwards,
+               drop 4s 4.6s forwards;
+   }
