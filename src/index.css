@@ -1,19 +1,3 @@
-/* CSS GRID RULES */
-
-.cardGrid{
-  margin-bottom:30px;
-  display: grid;
-  height: 400px;
-  max-height: 400px;
-  width: 100%;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 40px 4fr 1fr;
-  grid-template-areas: 
-    "title"
-    "description"
-    "tech"
-}
-
 .aboutMeFlex{
   display: flex;
   justify-content: center;
@@ -21,62 +5,19 @@
   max-height: 30vh;
 }
 
-.personalPhoto{
-  max-width: 24%;
-}
-
-.Tilt{
-  justify-self: center;
-}
-.cardName{
-  font-weight: 300;
-  font-size: 20px;
-  grid-column: 1 / 3;
-  grid-row: 1;
-}
-.cardImage{
-  margin: 20px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.cardDescription{
-  text-align: justify;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-.galaxyImage{
-  max-height: 250px;
-}
-.technology{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  min-height: 5vh;
-  padding: 2vh 0;
-  grid-column: 1 / 3;
-  grid-row: 3;
-}
-
-.title{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  min-height: 5vh;
-  font-size: 35px;
-  padding: 2vh 0;
-}
-
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+@media only screen and (max-width: 575px) {
+  .aboutMeFlex{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 30vh;
+  }
 }
 
 @media only screen and (min-width: 501px) {
@@ -91,46 +32,32 @@ body {
   }
 }
 
-@media only screen and (max-width: 575px) {
-  .pl5{
-    padding: 0 !important;
-  }
-  #insuring, #forcast, #purchase{
-    text-align: center;
-  }
-  .aboutMeFlex{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-height: 30vh;
-  }
-  .personalPhoto{
-    max-width: 50%;
-  }
+.nav li{
+  transition: all 0.5s ease-in-out;
+  border-bottom: solid grey 0.5px;
 }
 
-.active{
-  background-color: #08c469;
-  color: white !important;
+.nav a:hover{
+  color: blue !important;
 }
 
-@media only screen and (min-width: 575px) {
-  .crop{
-    margin-right: 1%; 
-    -webkit-box-shadow: 0;
-    -moz-box-shadow: 0;
-    box-shadow: 0;
-  }
+.nav{
+  min-width: 100px;
+  width: 100%;
 }
 
-.location{
-  font-size: 12px;
+.nav a{
+  color: black;
 }
 
-.purchaseRow .col-4{
-  padding-right: 7px;
-  padding-left: 7px;
+.nav a:hover{
+  text-decoration: none;
 }
+
+.nav-item:hover{
+  color: blue !important;
+}
+
 .leftNav{
   max-width: 20%;
   position: fixed;
@@ -174,79 +101,12 @@ body {
 #hamburger:hover, #close:hover{
   cursor: pointer;
 }
-.purchaseRow{
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-}
 #owl{
   width: 80px;
 }
 
-.plan{
-  border-radius: 5px;
-  -webkit-box-shadow: -1px -1px 13px 0px rgba(209,207,209,1);
-  -moz-box-shadow: -1px -1px 13px 0px rgba(209,207,209,1);
-  box-shadow: -1px -1px 13px 0px rgba(209,207,209,1);
-  min-height: 200px;
-  max-width: 50vh;
-}
-
-.plan:hover{
-  -webkit-box-shadow: -1px -1px 13px 0px rgb(78, 78, 78);
-  -moz-box-shadow: -1px -1px 13px 0px rgb(78, 78, 78);
-  box-shadow: -1px -1px 13px 0px rgb(78, 78, 78);
-  cursor: pointer;
-}
-
-.innerDiv{
-  text-align: left;
-  padding: 10%;
-}
-
-.plan p:nth-child(1){
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.plan p:nth-child(2){
-  font-size: 12px;
-  font-weight: 100;
-}
-
-.plan span:first-of-type{
-  font-size: 25px;
-  font-weight: 100;
-}
-
-.nav{
-  min-width: 100px;
-  width: 100%;
-}
-
-.nav a{
-  color: black;
-}
-
-.nav a:hover{
-  text-decoration: none;
-}
-
 .container {
   max-width: 20000px;
-}
-
-.nav li{
-  transition: all 0.5s ease-in-out;
-  border-bottom: solid grey 0.5px;
-}
-
-.nav a:hover{
-  color: blue !important;
-}
-
-.nav-item:hover{
-  color: blue !important;
 }
 
 h5{
@@ -254,86 +114,11 @@ h5{
   color: black;
   font-weight: 600;
 }
-.cardGrid i{
-  font-size: 50px;
-}
+
 .nav li:hover{
   transform: scale(1.15);
   transition-duration: .25s;
   text-decoration: none;
-}
-
-#forcast, #purchase{
-  margin-top: 6vw;
-}
-
-/**
-* Chart Css
-*/
-
-.chartContainer {
-  position: relative;
-  margin-bottom: 5vw;
-}
-
-.chartBack,
-.chartFront {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.chartFront {
-  z-index: 100;
-}
-
-.chartFrontFlex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  height: 420px;
-}
-
-.chartFooter {
-  height: '40px';
-  display: 'flex';
-  padding-top: 420px;
-}
-
-.footerPipe {
-  width: '25%';
-  height: '100%';
-  text-align: 'left';
-}
-
-#navBox{
-  display: flex;
-  flex-flow: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100vh;
-}
-
-.chartDivisionsGroup {
-  border-left: '1px solid black';
-  border-bottom: '1px solid black';
-  height: '400px';
-  width: '100%';
-  display: 'flex';
-  padding-left: '10px';
-}
-
-.chartDivisions {
-  border-right: '1px solid black';
-  width: '25%';
-  height: '100%';
-}
-
-.demandDivisions {
-  height: '14%';
 }
 
 /**

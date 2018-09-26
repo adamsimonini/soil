@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import LeftNav from './LeftNav';
-import Featured from './Featured';
-import Work from './Work';
-import WebApps from './WebApps';
-import AboutMe from './AboutMe';
-import Hackathons from './Hackathons';
+import LeftNav from '../Navigation/LeftNav';
+import Featured from '../Featured/Featured';
+import Work from '../Work/Work';
+import WebApps from '../WebApps';
+import AboutMe from '../About/About';
+import Hackathons from '../Hackathons/Hackathons';
 
 export default class Layout extends React.Component {
   render() {
@@ -15,7 +15,7 @@ export default class Layout extends React.Component {
         <Router>
             <Row>
                 <Col xs="12" className="leftNav"><LeftNav /></Col>
-                <Col xs="12" sm={{ size: 10, offset: 2 }}>
+                <Col xs="12" sm={{ size: 10, offset: 2 }} style={{marginTop: 70}}>
                 {/* <span className="title">Adam Simonini</span> */}
                 <Switch>
                     <Route key="0" exact path="/abv" component={Featured}/> 

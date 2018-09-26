@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { Nav, NavItem } from 'reactstrap';
-import Owl from './images/owl.png';
+import Owl from '../images/owl.png';
+import './LeftNav.css';
 
 
 export default class LeftNav extends React.Component {
@@ -16,11 +17,13 @@ export default class LeftNav extends React.Component {
     document.getElementById("close").style.display = "none";
     document.getElementById("navBox").style.display = "none";
   }
+
   render() {
     return (
+
         <Nav vertical>
         	<span id="hamburger" onClick={this.openNav}>&#9776;</span>
-          <span id="close" onClick={this.closeNav} style={{display: 'none'}}>X</span>
+          <span id="close" onClick={this.closeNav}>X</span>
           <div style={{ marginBottom: 10}}>
           </div>
           <div id="navBox">
@@ -37,11 +40,13 @@ export default class LeftNav extends React.Component {
             <NavItem>
               <Link to="/AboutMe">About Me</Link>
             </NavItem>
-            <NavItem style={{borderBottom: 0}}>
+            <NavItem>
               <Link to="/Hackathons">Hackathons</Link>
             </NavItem>
           </div>
         </Nav>
+
+
     );
   }
 }

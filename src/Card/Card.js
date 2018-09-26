@@ -1,5 +1,6 @@
 import React from 'react';
-import Tilt from 'react-tilt'
+import Tilt from 'react-tilt';
+import './Card.css';
 
 const hyperlink = {
             color: 'black',
