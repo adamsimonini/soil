@@ -155,22 +155,22 @@
     animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) both,
                flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2s forwards,
                drop 4s 4s forwards;
-   }
+  }
    
-   .technology span:nth-child(2) {
-    animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) .2s both,
-               flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2.2s forwards,
-               drop 4s 4.2s forwards;
-   }
+  .technology span:nth-child(2) {
+   animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) .2s both,
+              flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2.2s forwards,
+              drop 4s 4.2s forwards;
+  }
    
-   .technology span:nth-child(3) {
-    animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) .4s both,
-               flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2.4s forwards,
-               drop 4s 4.4s forwards;
-   }
+  .technology span:nth-child(3) {
+   animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) .4s both,
+              flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2.4s forwards,
+              drop 4s 4.4s forwards;
+  }
    
-   .technology span:nth-child(4) {
-    animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) .6s both,
-               flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2.6s forwards,
-               drop 4s 4.6s forwards;
-   }
+  .technology span:nth-child(4) {
+   animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) .6s both,
+              flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2.6s forwards,
+              drop 4s 4.6s forwards;
+  }
