@@ -1,0 +1,69 @@
+.work-image{
+    max-width: 100%;
+}
+
+.work-title{
+    background-color: #eceeef;
+}
+
+/* IMAGE OVERLAY */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+.bg, .overlay {
+    text-align: center;
+  }
+  img, .overlay {
+    transition: 0.3s all;
+    border-radius: 3px;
+  }
+  .bg {
+    float: left;
+    position: relative;
+    margin: 0.5%;
+    margin-bottom: 5vh;
+  }
+  .bg img {
+    width: 100%;
+    margin-bottom: -4px;
+  }
+  .bg .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: calc(0.8vw + 8px);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+  }
+  .bg .overlay h2 {
+    padding-top: 20%;
+    font-family: 'Droid Serif', serif;
+  }
+  .bg .overlay p {
+    font-family: 'Julius Sans One', sans-serif;
+  }
+  .bg:hover .overlay {
+    opacity: 1;
+    border-radius: 20px;
+  }
+  .bg:hover img {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    border-radius: 20px;
+  }
+
+  .skill-row img{
+    max-width: 280px;
+  }

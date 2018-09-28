@@ -1,0 +1,26 @@
+.hack-image{
+    max-width: 70%;
+}
+
+.hack-col{
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.devicon{
+    font-size: 40px;
+}
+
+.hack-tech{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 300px;
+}

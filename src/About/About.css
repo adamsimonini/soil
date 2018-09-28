@@ -21,8 +21,8 @@
     font-size: 60px;
 }
 
-.skill-col{
-    margin-bottom: 20px;
+.skill-row p{
+  margin-bottom: 0;
 }
 
 .full-name span {

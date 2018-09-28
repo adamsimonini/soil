@@ -27,26 +27,28 @@ export default class LeftNav extends React.Component {
           <div style={{ marginBottom: 10}}>
           </div>
           <div id="navBox">
-            <img id="owl" src={Owl} alt="Owl Logo"/>
+            <NavItem>
+              <Link to="/">
+                <img id="owl" src={Owl} alt="Owl Logo"/>
+              </Link>
+            </NavItem>
             <NavItem>
               <Link to="/Featured">Featured Projects</Link>
             </NavItem>
             <NavItem>
-              <Link to="/Work">Work Projects</Link>
+              <Link to="/">About Me</Link>
             </NavItem>
+            {/* <NavItem>
+              <Link to="/Work">Work Projects</Link>
+            </NavItem> */}
             <NavItem>
               <Link to="/WebApps">Web Apps</Link>
-            </NavItem>
-            <NavItem>
-              <Link to="/AboutMe">About Me</Link>
             </NavItem>
             <NavItem>
               <Link to="/Hackathons">Hackathons</Link>
             </NavItem>
           </div>
         </Nav>
-
-
     );
   }
 }

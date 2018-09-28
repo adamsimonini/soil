@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Progress } from 'reactstrap';
 import './About.css';
 import { Row, Col } from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 export default class AboutMe extends Component{
@@ -65,8 +66,8 @@ export default class AboutMe extends Component{
             <Progress color='primary' value={70} />
           </Col>
           <Col className="skill-col" xs="12" sm="6">
-            <span>{php} 70%</span>
-            <Progress color='primary' value={70} />
+            <span>{php} 50%</span>
+            <Progress color='warning' value={50} />
           </Col>
         </Row>
         </div>
@@ -81,14 +82,25 @@ export default class AboutMe extends Component{
         </div>
         <h3 className="about-title">Formal Education</h3>
         <div id="education-box">
-        <Row className="skill-row">
-          <Col className="skill-col" xs="12" sm="6">
-            <h3>University of Toronto - B.A.</h3>
-          </Col>
-          <Col className="skill-col" xs="12" sm="6">
-            <h3>Ryerson University - M.A.</h3>
-          </Col>
-        </Row>
+          <Row className="skill-row">
+            <Col className="skill-col" xs="12" sm="6">
+              <img src={require('../images/toronto.png')}/>
+              <p>B.A. 2010</p>
+            </Col>
+            <Col className="skill-col" xs="12" sm="6">
+              <img src={require('../images/ryerson.png')}/>
+              <p>M.A. 2013</p>
+            </Col>
+          </Row>
+          <h3 className="about-title">Connect</h3>
+          <div id="tool-box">
+            <a className="media-icons" target="_blank" href="https://www.linkedin.com/in/adamsimonini/">
+              <img src={require('../images/linkedin.png')}/>
+            </a>
+            <a className="media-icons" target="_blank" href="https://github.com/adamsimonini">
+              <img src={require('../images/github-purple.png')}/>
+            </a>
+          </div>
         </div>
       </div>
     );

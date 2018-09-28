@@ -1,0 +1,13 @@
+#web-box .cardGrid{
+    margin-bottom:30px;
+    display: grid;
+    height: 400px;
+    max-height: 400px;
+    width: 100%;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 40px 4fr 1fr;
+    grid-template-areas: 
+      "title"
+      "description"
+      "tech"
+  }
