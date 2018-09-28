@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Progress } from 'reactstrap';
 import './About.css';
 import { Row, Col } from 'reactstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 
 export default class AboutMe extends Component{
 

@@ -45,6 +45,7 @@ export default class Featured extends Component{
     ];
     return (
         <div className="container">
+            <h1 style={{marginBottom: 25}}>Featured Projects</h1>
             <Row>
                 <Col xs="12" md="6">
                     <Card props={cards[0]}/>

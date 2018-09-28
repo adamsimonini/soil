@@ -13,10 +13,9 @@ export default class WebApps extends Component{
     const html = <i style={{width: 100}} className="devicon-html5-plain-wordmark colored"></i>;
     const css = <i className="devicon-css3-plain-wordmark colored"></i>;
     const jquery = <i className="devicon-jquery-plain-wordmark colored"></i>;
-    // const react = <i className="devicon-react-plain-wordmark colored"></i>;
+    const react = <i className="devicon-react-plain-wordmark colored"></i>;
     const bootstrap = <i className="devicon-bootstrap-plain-wordmark colored"></i>;
     const javascript = <i className="devicon-javascript-plain colored"></i>;
-    const foundation = <i className="devicon-foundation-plain-wordmark colored"></i>;
 
     const cards = [
         {
@@ -36,12 +35,12 @@ export default class WebApps extends Component{
         },
         {
             name: "React Stopwatch",
-            technology: [bootstrap, html, css],
+            technology: [react, html, css],
             image: Yorkdale,
         },
         {
           name: "React Validation",
-          technology: [bootstrap, html, css],
+          technology: [react, html, css],
           image: Yorkdale,
         },
         {
@@ -52,6 +51,7 @@ export default class WebApps extends Component{
     ];
     return (
         <div id="web-box" className="container">
+            <h1 style={{marginBottom: 25}}>Web Apps</h1>
           <Row>
             <Col xs="12" md="4">
                 <Card props={cards[0]}/>

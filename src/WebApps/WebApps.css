@@ -11,3 +11,9 @@
       "description"
       "tech"
   }
+
+  #web-box .technology{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }

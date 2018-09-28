@@ -44,7 +44,7 @@ export default class Hackathons extends Component{
             <img className="hack-image" src={require('../images/trophy/egg.png')} />
           </Col>
           <Col xs="12" sm="6" className="hack-col">
-            <h2>Canadian Life Hacks</h2>
+            <h2>Amazon Canadian Life Hacks</h2>
             <img className="hack-image" src={require('../images/hackathons/lifehack.jpg')} />
             <div className="hack-tech">
               {node}{aws}
