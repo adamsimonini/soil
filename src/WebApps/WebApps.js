@@ -60,18 +60,18 @@ export default class WebApps extends Component{
                 <Card props={cards[1]}/>
             </Col>
             <Col xs="12" md="4">
-                <Card props={cards[3]}/>
+                <Card props={cards[2]}/>
             </Col>
           </Row>
           <Row>
+            <Col xs="12" md="4">
+                <Card props={cards[3]}/>
+            </Col>
             <Col xs="12" md="4">
                 <Card props={cards[4]}/>
             </Col>
             <Col xs="12" md="4">
                 <Card props={cards[5]}/>
-            </Col>
-            <Col xs="12" md="4">
-                <Card props={cards[6]}/>
             </Col>
           </Row>
          </div>
