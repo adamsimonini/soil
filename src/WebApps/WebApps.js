@@ -53,7 +53,7 @@ export default class WebApps extends Component{
     ];
     return (
         <div id="web-box" className="container">
-            <h1 style={{marginBottom: 25}}>Web Apps</h1>
+            <h1 className="section-title">Web Apps</h1>
           <Row>
             <Col xs="12" md="4">
                 <Card props={cards[0]}/>

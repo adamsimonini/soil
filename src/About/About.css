@@ -25,6 +25,18 @@
     font-size: 60px;
 }
 
+#full-name{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Audiowide', cursive;
+}
+
+#full-name h1{
+  font-size: 60px;
+}
+
 .skill-row p{
   margin-bottom: 0;
 }

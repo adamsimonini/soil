@@ -39,8 +39,8 @@ body {
   text-decoration: none;
 }
 
-.nav-item:hover{
-  color: blue !important;
+.nav-item a:hover{
+  color: red !important;
 }
 
 .leftNav{

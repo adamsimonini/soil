@@ -28,7 +28,7 @@ export default class LeftNav extends React.Component {
           </div>
           <div id="navBox">
             <NavItem>
-              <Link to="/">
+              <Link style={{borderBottom: 0}} to="/">
                 <img id="owl" src={Owl} alt="Owl Logo"/>
               </Link>
             </NavItem>

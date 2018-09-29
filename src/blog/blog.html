@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bulma Blog</title>
+		<link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+		<link rel="icon" href="images/code.png">
+        <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+		<style>
+
+            .center {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .is-paddingless-horizontal { padding-left: 0; padding-right: 0; }
+
+            .grid {
+                display: grid;
+                grid-template-columns:
+                    [xl-start] 1fr 1.5rem [md-start] minmax(0, 624px) [md-end] 1.5rem 1fr [xl-end];
+            }
+
+            .grid *  { grid-column: md; }
+            .grid-xl { grid-column: xl; }
+
+			@media (max-width: 672px){
+				:root {
+					font-size: 90%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- .section -->
+		<section class="section is-paddingless-horizontal">
+			<div class="container grid">
+				<nav class="breadcrumb" aria-label="breadcrumbs">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li class="is-active"><a href="#" aria-current="page">Why become a PA?</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+		<!-- /.section -->
+
+		<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+			<div class="container grid">
+				
+				<!-- .media -->
+				<article class="media center">
+					<figure class="media-left">
+						<figure class="image is-64x64">
+							<img src="images/me.jpg" style="border-radius: 50%;">
+						</figure>
+					</figure>
+					<div class="media-content">
+						<div class="content">
+							<p>
+								<strong>Adam Simonini</strong> <a>@ajsim</a><br>
+								<span class="has-text-grey">Front-end developer<br>
+								<time datetime="2018-04-20">June 22</time> · 1 min read</span>
+							</p>
+						</div>
+					</div>
+				</article>
+				<!-- /.media -->
+
+			<div class="section is-paddingless-horizontal">
+                <h1 class="title">Why become a PA?</h1>
+                <h2 class="subtitle">What they are, and why they're needed</h2>
+            </div>
+
+            <figure class="columns is-mobile is-variable is-marginless is-1 grid-xl">
+                <div class="column">
+                    <figure class="image card">
+                        <img src="images/pa-1.jpg">
+                    </figure>
+                </div>
+                <div class="column">
+                    <figure class="image card">
+                        <img src="images/pa-2.jpg">
+                    </figure>
+                </div>
+                <div class="column">
+                    <figure class="image card">
+                        <img src="images/pa-3.jpg">
+                    </figure>
+                </div>
+            </figure>
+
+            <figcaption class="level">
+				<small class="level-item has-text-grey">
+					A new, but important, role in healthcare
+				</small>
+			</figcaption>
+
+            <div class="content is-medium">
+				<div class="is-primary">
+					<h5 class="primary">This piece answers two questions: (1) "What is a PA?", and (2) "Why would one want to become a PA?"</h5>
+				</div>
+				<p class="notification" style="font-size: 12px">
+					*As a brief preface, some of the material featured in the following post is based on information from the United States of America. The PA profession in Canada is relatively new, as schools offering PA degrees beyond that of the Canadian Armed Forces began operation in 2008.
+				</p>
+				
+				<h5>Physician assistants are generalists of medicine.</h5>
+				<p>
+					They are trained as physicians are, but the depth of their training is less. For example, 
+					most PA programs are two years long: the first year being intense academic study and the second year being rotations. 
+					In comparison, MDs complete two years of intense academic study, followed by two years of rotations, and then continue on to residency. 
+					Consequently, PAs are trained in the basic competencies of MDs, such as taking medical histories, handling medical records, ordering tests, 
+					interpreting test results, producing a diagnosis, creating a treatment plan, and writing prescriptions (within the scope decided upon by the presiding MD).
+				</p>
+				
+				<h5>Physician assistants are dependent medical practitioners. </h5>
+				<p>
+					In other words, they cannot work independent of a physician. Are PAs therefore shackled to MDs? Not at all! 
+					PAs can fulfill most of their duties autonomously, and with increasingly less oversight from their supervising physician as trust increases. 
+					They can also work much more closely with doctors. For example, qualified PAs can work with surgeons on the operating room floor, making incisions, 
+					suturing wounds, and performing various parts of some surgeries. Overall, a PA reduces the demands on their supervising physician, 
+					thereby freeing the doctor up to see patients requiring more acute care, for example.
+				</p>
+				<p>The role of the PA’s supervising MD is as follows: a) ensure that the PA is confident in practicing medicine on the MD’s patients through guidance, training, and feedback; b) outline the duties, expectations, and scope of the PA’s role; c) confer with the PA over difficult cases, & takeover treatment when the situation goes beyond the abilities of the PA; and d) cover the PA under his or her insurance.</p>
+				
+				<h5>Why become a PA?</h5>
+				<p>
+					I have already mentioned in passing some great reasons to become a PA: 
+					relatively high autonomy to practice medicine, generalized training allowing for the transition into various specialties, 
+					a focus on a cooperative work environment, and the ability to begin practicing sooner than the MD route. 
+					 Also insinuated above is that the field is positioned to boom as solutions for the Canadian healthcare system’s ballooning budget are sought. 
+					 PAs are expected to be in high demand in the coming decades, especially if they become implemented in more provinces. (At the time of writing only 4 
+					 provinces allow for PAs to work, the latest one being Alberta in 2013. Several other provinces, including BC, are looking into implementing PAs.) 
+					 Indeed, provincial governments are investing into the role. For example, Ontario is currently offering monetary incentives to 
+					 hospitals that hire fresh PA program graduates.				
+				</p>
+				<p>The role of the PA is heavily patient and service orientated, as their introduction into the healthcare system is intended to give better quality of care to patients via increasing the face-to-face time patients have with medical professionals. PAs can increase the amount of time each patient is spending in front of a medical professional, thereby ensuring that the patient’s full concerns are addressed, that all the right questions are asked, that the patient better understands his or her treatment options, and that prescribed treatments are more thoroughly explained. The role is very social, and PAs can look forward to communicating with a large number of patients. The end result is twofold: greater satisfaction for the patient, and the satisfaction of knowing that one is making a tangible, positive, and lasting impact on the lives of others.</p>
+				<p>PAs are also perpetual learners. Both MDs and PAs learn while on the job, and will often defer to supervisors during the beginning of their career. As a PA, it is understood by your supervising doctor that you haven’t formally studied the breadth and depth of knowledge MDs have, and so you are continually expected to learn. In consequence, the profession inherently infuses learning with working. Add the fact that PAs can switch specialties, and the career offers seemingly endless personal and professional development.</p>
+            </div>
+
+			</div>
+		</section>
+
+	</body>
+</html>

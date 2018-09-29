@@ -7,7 +7,7 @@ export default class Work extends Component{
   render() {
     return (
       <Container>
-        <h1 style={{marginBottom: 25}}>Work Projects</h1>
+        <h1 className="section-title">Work Projects</h1>
         <Row>
          <Col xs="12" className="">
           <div class="bg">

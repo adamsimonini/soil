@@ -8,17 +8,17 @@ export default class Hackathons extends Component{
 
     const html = <i className="devicon devicon-html5-plain-wordmark colored"></i>;
     const css = <i className="devicon devicon-css3-plain-wordmark colored"></i>;
-    const jquery = <i className="devicon devicon-jquery-plain-wordmark colored"></i>;
     const react = <i className="devicon devicon-react-plain-wordmark colored"></i>;
-    const bootstrap = <i className="devicon devicon-bootstrap-plain-wordmark colored"></i>;
     const javascript = <i className="devicon devicon-javascript-plain colored"></i>;
     const node = <i style={{fontSize: 80}} class="devicon devicon-nodejs-plain-wordmark colored"></i>;
     const aws = <i style={{fontSize: 80}} class="devicon devicon-amazonwebservices-plain-wordmark colored"></i>;
     const angular = <i class="devicon devicon-angularjs-plain colored"></i>
+    // const jquery = <i className="devicon devicon-jquery-plain-wordmark colored"></i>;
+    // const bootstrap = <i className="devicon devicon-bootstrap-plain-wordmark colored"></i>;
 
     return (
       <Container>
-        <h1 style={{marginBottom: 25}}>Hackathons</h1>
+        <h1 className="section-title">Hackathons</h1>
         <Row>
           <Col xs="12" sm="6" className="hack-col">
             <h2>Gift The Code 2018 (upcoming)</h2>

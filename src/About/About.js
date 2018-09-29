@@ -25,7 +25,14 @@ export default class AboutMe extends Component{
 
     return (
       <div>
-        <img className='headshot' src={require('../images/headshot.png')} />
+        <Row>
+          <Col sm="6" xs="12">
+            <img className='headshot' src={require('../images/headshot.png')} />
+          </Col>
+          <Col id="full-name" sm="6" xs="12">
+            <h1>Adam Simonini</h1>
+          </Col>
+        </Row>
         <h3 className="about-title">Skills</h3>
         <div id="skill-box">
         <Row className="skill-row">
@@ -98,7 +105,7 @@ export default class AboutMe extends Component{
             <a className="media-icons" target="_blank" href="https://github.com/adamsimonini">
               <img src={require('../images/github-purple.png')}/>
             </a>
-            <a className="media-icons" target="_blank" href="https://codepen.io/ajsim">
+            <a className="media-icons" target="_blank" href="https://codepen.io/collection/ArWxjY/">
               <img src={require('../images/codepen.png')}/>
             </a>
           </div>
