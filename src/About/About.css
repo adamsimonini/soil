@@ -190,3 +190,9 @@
               flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2.6s forwards,
               drop 4s 4.6s forwards;
   }
+
+  @media (max-width: 575px) {
+    .skill-col{
+      margin-bottom: 20px;
+    }
+  }

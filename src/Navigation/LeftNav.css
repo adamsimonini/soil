@@ -81,3 +81,9 @@
     border-bottom: 0;
   }
   
+  @media (max-width: 575px) {
+    #owl{
+      margin: 0 auto;
+      margin-bottom: 5vh;
+    }
+  }
