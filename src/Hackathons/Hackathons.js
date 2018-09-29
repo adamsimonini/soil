@@ -22,13 +22,13 @@ export default class Hackathons extends Component{
         <Row>
           <Col xs="12" sm="6" className="hack-col">
             <h2>Gift The Code 2018 (upcoming)</h2>
-            <img className="hack-image" src={require('../images/hackathons/gtc18.jpg')} />
+            <img className="hack-image" alt="Gift The Code 2018" src={require('../images/hackathons/gtc18.jpg')} />
             <p>Outcome:</p>
             <p>pending...</p>
           </Col>
           <Col xs="12" sm="6" className="hack-col">
             <h2>Hack to Give Back (upcoming)</h2>
-            <img className="hack-image" src={require('../images/hackathons/give-back.jpg')} />
+            <img className="hack-image" alt="Give Back" src={require('../images/hackathons/give-back.jpg')} />
             <p>Outcome:</p>
             <p>pending...</p>
           </Col>
@@ -36,52 +36,52 @@ export default class Hackathons extends Component{
         <Row>
           <Col xs="12" sm="6" className="hack-col">
             <h2>Elevate (2018)</h2>
-            <img className="hack-image" src={require('../images/hackathons/elevate18.jpg')} />
+            <img className="hack-image" alt="Elevate 2018" src={require('../images/hackathons/elevate18.jpg')} />
             <div className="hack-tech">
               {react}{html}{css}
             </div>
             <p>Outcome:</p>
-            <img className="hack-image" src={require('../images/trophy/egg.png')} />
+            <img className="hack-image" alt="Egg" src={require('../images/trophy/egg.png')} />
           </Col>
           <Col xs="12" sm="6" className="hack-col">
             <h2>Amazon Canadian Life Hacks (2018)</h2>
-            <img className="hack-image" src={require('../images/hackathons/lifehack.jpg')} />
+            <img className="hack-image" alt="Amazon Life Hack" src={require('../images/hackathons/lifehack.jpg')} />
             <div className="hack-tech">
               {node}{aws}
             </div>
             <p>Outcome:</p>
-            <img className="hack-image" src={require('../images/trophy/silver.png')} />
+            <img className="hack-image" alt="Silver" src={require('../images/trophy/silver.png')} />
           </Col>
         </Row>
         <Row>
           <Col xs="12" sm="6" className="hack-col">
             <h2>Oxford Retail Challenge (2018)</h2>
-            <img className="hack-image" src={require('../images/hackathons/oxford.jpg')} />
+            <img className="hack-image" alt="Oxford Retail Hack" src={require('../images/hackathons/oxford.jpg')} />
             <div className="hack-tech">
               {javascript}{html}{css}
             </div>
             <p>Outcome:</p>
-            <img className="hack-image" src={require('../images/trophy/egg.png')} />
+            <img className="hack-image" alt="Egg" src={require('../images/trophy/egg.png')} />
           </Col>
           <Col xs="12" sm="6" className="hack-col">
             <h2>Mission Hack (2018)</h2>
-            <img className="hack-image" src={require('../images/hackathons/mission-hack.jpg')} />
+            <img className="hack-image" alt="Mission Hack" src={require('../images/hackathons/mission-hack.jpg')} />
             <div className="hack-tech">
               {react}{html}{css}
             </div>
             <p>Outcome:</p>
-            <img className="hack-image" src={require('../images/trophy/bronze.png')} />
+            <img className="hack-image" alt="Bronze" src={require('../images/trophy/bronze.png')} />
           </Col>
         </Row>
         <Row>
           <Col xs="12" sm="6" className="hack-col">
             <h2>Gift The Code (2017)</h2>
-            <img className="hack-image" src={require('../images/hackathons/gtc17.jpg')} />
+            <img className="hack-image" alt="Gift The Code 2017" src={require('../images/hackathons/gtc17.jpg')} />
             <div className="hack-tech">
               {angular}{html}{css}
             </div>
             <p>Outcome:</p>
-            <img className="hack-image" src={require('../images/trophy/gold.png')} />
+            <img className="hack-image" alt="Gold" src={require('../images/trophy/gold.png')} />
           </Col>
           {/* <Col xs="12" sm="6" className="hack-col">
           </Col> */}

@@ -27,7 +27,7 @@ export default class AboutMe extends Component{
       <div>
         <Row>
           <Col sm="6" xs="12">
-            <img className='headshot' src={require('../images/headshot.png')} />
+            <img className='headshot' alt="Adam Simonini" src={require('../images/headshot.png')} />
           </Col>
           <Col id="full-name" sm="6" xs="12">
             <h1>Adam Simonini</h1>
@@ -89,24 +89,24 @@ export default class AboutMe extends Component{
         <div id="education-box">
           <Row className="skill-row">
             <Col className="skill-col" xs="12" sm="6">
-              <img src={require('../images/toronto.png')}/>
+              <img alt="University of Toronto" src={require('../images/toronto.png')}/>
               <p>B.A. 2010</p>
             </Col>
             <Col className="skill-col" xs="12" sm="6">
-              <img src={require('../images/ryerson.png')}/>
+              <img alt="Ryerson University" src={require('../images/ryerson.png')}/>
               <p>M.A. 2013</p>
             </Col>
           </Row>
           <h3 className="about-title">Connect</h3>
           <div id="tool-box">
-            <a className="media-icons" target="_blank" href="https://www.linkedin.com/in/adamsimonini">
-              <img src={require('../images/linkedin.png')}/>
+            <a className="media-icons" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/adamsimonini">
+              <img alt="LinkedIn" src={require('../images/linkedin.png')}/>
             </a>
-            <a className="media-icons" target="_blank" href="https://github.com/adamsimonini">
-              <img src={require('../images/github-purple.png')}/>
+            <a className="media-icons" target="_blank" rel="noopener noreferrer" href="https://github.com/adamsimonini">
+              <img alt="Github" src={require('../images/github-purple.png')}/>
             </a>
-            <a className="media-icons" target="_blank" href="https://codepen.io/collection/ArWxjY/">
-              <img src={require('../images/codepen.png')}/>
+            <a className="media-icons" target="_blank" rel="noopener noreferrer" href="https://codepen.io/collection/ArWxjY/">
+              <img alt="CodePen" src={require('../images/codepen.png')}/>
             </a>
           </div>
         </div>

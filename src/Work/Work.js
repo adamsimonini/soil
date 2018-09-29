@@ -11,7 +11,7 @@ export default class Work extends Component{
         <Row>
          <Col xs="12" className="">
           <div class="bg">
-            <img className="work-image" src={require('../images/work/homepage.jpg')} />
+            <img className="work-image" alt="Homepage" src={require('../images/work/homepage.jpg')} />
             <div className="overlay">
               <h3 className="work-title">Homepage Redesign</h3>
               <br />
@@ -25,7 +25,7 @@ export default class Work extends Component{
         <Row>
          <Col xs="12" className="">
           <div class="bg">
-          <img className="work-image" src={require('../images/work/gallery.jpg')} />
+          <img className="work-image" alt="Gallery" src={require('../images/work/gallery.jpg')} />
             <div className="overlay">
               <h3 className="work-title">About Pages + Gallary Redesign</h3>
               <br />
@@ -39,7 +39,7 @@ export default class Work extends Component{
         <Row>
          <Col xs="12" className="">
           <div class="bg">
-            <img className="work-image" src={require('../images/work/promos.png')} />
+            <img className="work-image" alt="Promotions" src={require('../images/work/promos.png')} />
             <div class="overlay">
               <h3 className="work-title">Monthly Promotions</h3>
               <br />
