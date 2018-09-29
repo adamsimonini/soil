@@ -35,7 +35,7 @@ export default class Hackathons extends Component{
         </Row>
         <Row>
           <Col xs="12" sm="6" className="hack-col">
-            <h2>Elevate 2018</h2>
+            <h2>Elevate (2018)</h2>
             <img className="hack-image" src={require('../images/hackathons/elevate18.jpg')} />
             <div className="hack-tech">
               {react}{html}{css}
@@ -44,7 +44,7 @@ export default class Hackathons extends Component{
             <img className="hack-image" src={require('../images/trophy/egg.png')} />
           </Col>
           <Col xs="12" sm="6" className="hack-col">
-            <h2>Amazon Canadian Life Hacks</h2>
+            <h2>Amazon Canadian Life Hacks (2018)</h2>
             <img className="hack-image" src={require('../images/hackathons/lifehack.jpg')} />
             <div className="hack-tech">
               {node}{aws}
@@ -55,7 +55,7 @@ export default class Hackathons extends Component{
         </Row>
         <Row>
           <Col xs="12" sm="6" className="hack-col">
-            <h2>Oxford Retail Challenge</h2>
+            <h2>Oxford Retail Challenge (2018)</h2>
             <img className="hack-image" src={require('../images/hackathons/oxford.jpg')} />
             <div className="hack-tech">
               {javascript}{html}{css}
@@ -64,7 +64,7 @@ export default class Hackathons extends Component{
             <img className="hack-image" src={require('../images/trophy/egg.png')} />
           </Col>
           <Col xs="12" sm="6" className="hack-col">
-            <h2>Mission Hack</h2>
+            <h2>Mission Hack (2018)</h2>
             <img className="hack-image" src={require('../images/hackathons/mission-hack.jpg')} />
             <div className="hack-tech">
               {react}{html}{css}
@@ -75,7 +75,7 @@ export default class Hackathons extends Component{
         </Row>
         <Row>
           <Col xs="12" sm="6" className="hack-col">
-            <h2>Gift The Code 2017</h2>
+            <h2>Gift The Code (2017)</h2>
             <img className="hack-image" src={require('../images/hackathons/gtc17.jpg')} />
             <div className="hack-tech">
               {angular}{html}{css}

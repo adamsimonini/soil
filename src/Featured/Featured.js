@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
 import Card from '../Card/Card';
-import Galaxy from '../images/overwatch.jpg';
-import Calculator from '../images/calculator.png';
-import Twitch from '../images/twitch.png';
-import Yorkdale from '../images/yorkdale.png';
+import Galaxy from '../images/projects/overwatch.jpg';
+import Calculator from '../images/projects/calculator.png';
+import Twitch from '../images/projects/twitch.png';
+import Yorkdale from '../images/projects/yorkdale.png';
 
 export default class Featured extends Component{
 

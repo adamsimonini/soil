@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
 import Card from '../Card/Card';
-import Galaxy from '../images/overwatch.jpg';
-import Calculator from '../images/calculator.png';
-import Twitch from '../images/twitch.png';
-import Yorkdale from '../images/yorkdale.png';
+import Tesla from '../images/projects/tesla.png';
+import Blog from '../images/projects/blog.png';
+import Pin from '../images/projects/pinpal.png';
+import Bernie from '../images/projects/bernie.png';
+import Form from '../images/projects/form.png';
+import Twitch from '../images/projects/twitch.png';
 import './WebApps.css';
 
 export default class WebApps extends Component{
@@ -21,32 +23,32 @@ export default class WebApps extends Component{
         {
             name: "Tesla Roadster Clone",
             technology: [jquery, html, css],
-            image: Galaxy,
+            image: Tesla,
         },
         {
             name: "Simple Blog",
             technology: [html, css],
-            image: Twitch,
+            image: Blog,
         },
         {
             name: "Pin Pal",
             technology: [javascript, bootstrap, html, css],
-            image: Calculator,
+            image: Pin,
         },
         {
-            name: "React Stopwatch",
+            name: "Bernie2020",
             technology: [react, html, css],
-            image: Yorkdale,
+            image: Bernie,
         },
         {
           name: "React Validation",
           technology: [react, html, css],
-          image: Yorkdale,
+          image: Form,
         },
         {
-          name: "React Validation",
+          name: "Twitch App",
           technology: [bootstrap, html, css],
-          image: Yorkdale,
+          image: Twitch,
         },
     ];
     return (
