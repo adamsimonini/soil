@@ -5,6 +5,25 @@ import { Row, Col } from 'reactstrap';
 
 export default class AboutMe extends Component{
 
+  state = {
+    skills: [
+      {skill: "html", level:90},
+      {skill: "css", level:90},
+      {skill: "bootstrap", level:90},
+      {skill: "javascript", level:80},
+      {skill: "jquery", level:80},
+      {skill: "react", level:70},
+      {skill: "wordpress", level:70},
+      {skill: "php", level:50},
+    ]
+  }
+
+  animatedProgress = () => {
+    this.setState({
+
+    });
+  }
+
   render() {
 
     const html = <i style={{width: 100}} className="devicon-html5-plain-wordmark colored"></i>;
@@ -23,6 +42,15 @@ export default class AboutMe extends Component{
     const vscode = <i className="devicon-visualstudio-plain colored"></i>;
     const illustrator = <i className="devicon-illustrator-plain colored"></i>;
 
+    let start = 0;
+    function animate(max){
+      while (start < max){
+        console.log(start);
+        start++;
+      }
+      return start;
+    }
+
     return (
       <div>
         <Row>
@@ -38,41 +66,41 @@ export default class AboutMe extends Component{
         <Row className="skill-row">
           <Col className="skill-col" xs="12" sm="6">
             <span>{html} 90%</span>
-            <Progress color='success' value={90} />
+            <Progress animated striped color='success' value={this.state.skills[0].level} />
           </Col>
           <Col className="skill-col" xs="12" sm="6">
             <span>{css} 90%</span>
-            <Progress color='success' value={90} />
+            <Progress animated striped color='success' value={90} />
           </Col>
         </Row>
         <Row className="skill-row">
           <Col className="skill-col" xs="12" sm="6">
             <span>{bootstrap} 90%</span>
-            <Progress color='success' value={90} />
+            <Progress animated striped color='success' value={90} />
           </Col>
           <Col className="skill-col" xs="12" sm="6">
             <span>{javascript} 80%</span>
-            <Progress color='success' value={80} />
+            <Progress animated striped color='success' value={80} />
           </Col>
         </Row>
         <Row className="skill-row">
           <Col className="skill-col" xs="12" sm="6">
             <span>{jquery} 80%</span>
-            <Progress color='success' value={80} />
+            <Progress animated striped color='success' value={80} />
           </Col>
           <Col className="skill-col" xs="12" sm="6">
             <span>{react} 70%</span>
-            <Progress color='primary' value={70} />
+            <Progress animated striped color='primary' value={70} />
           </Col>
         </Row>
         <Row className="skill-row">
           <Col className="skill-col" xs="12" sm="6">
             <span>{wordpress} 70%</span>
-            <Progress color='primary' value={70} />
+            <Progress animated striped color='primary' value={70} />
           </Col>
           <Col className="skill-col" xs="12" sm="6">
             <span>{php} 50%</span>
-            <Progress color='warning' value={50} />
+            <Progress animated striped color='warning' value={50} />
           </Col>
         </Row>
         </div>
