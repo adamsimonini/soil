@@ -7,7 +7,11 @@
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.skill-row{
+  margin-bottom: 10px;
 }
 
 #tool-box{
