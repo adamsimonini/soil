@@ -47,18 +47,18 @@ export default class Featured extends Component{
         <div className="container">
             <h1 className="section-title">Featured Projects</h1>
             <Row>
-                <Col xs="12" md="6">
+                <Col xs="12" lg="6">
                     <Card props={cards[0]}/>
                 </Col>
-                <Col xs="12" md="6">
+                <Col xs="12" lg="6">
                     <Card props={cards[1]}/>
                 </Col>
             </Row>
             <Row>
-                <Col xs="12" md="6">
+                <Col xs="12" lg="6">
                     <Card props={cards[2]}/>
                 </Col>
-                <Col xs="12" md="6">
+                <Col xs="12" lg="6">
                     <Card props={cards[3]}/>
                 </Col>
             </Row>
