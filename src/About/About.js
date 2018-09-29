@@ -92,11 +92,14 @@ export default class AboutMe extends Component{
           </Row>
           <h3 className="about-title">Connect</h3>
           <div id="tool-box">
-            <a className="media-icons" target="_blank" href="https://www.linkedin.com/in/adamsimonini/">
+            <a className="media-icons" target="_blank" href="https://www.linkedin.com/in/adamsimonini">
               <img src={require('../images/linkedin.png')}/>
             </a>
             <a className="media-icons" target="_blank" href="https://github.com/adamsimonini">
               <img src={require('../images/github-purple.png')}/>
+            </a>
+            <a className="media-icons" target="_blank" href="https://codepen.io/ajsim">
+              <img src={require('../images/codepen.png')}/>
             </a>
           </div>
         </div>
