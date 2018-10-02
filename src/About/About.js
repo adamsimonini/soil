@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Progress } from 'reactstrap';
 import './About.css';
 import { Row, Col } from 'reactstrap';
+import Typist from 'react-typist';
 
 export default class AboutMe extends Component{
 
@@ -59,7 +60,20 @@ export default class AboutMe extends Component{
           </Col>
           <Col id="full-name" sm="6" xs="12">
             <h1>Adam Simonini</h1>
-            <p>Developer. Teamplayer. Father.</p>
+            <Typist cursor={{ 
+              show: true,
+              blink: true,
+              element: '|',
+              hideWhenDone: true,
+              hideWhenDoneDelay: 1000,
+              }} startDelay={2000}
+            >
+              <spam>Teamplayer</spam>
+              <Typist.Backspace count={10} delay={1500} />
+              <spam>Creative</spam>
+              <Typist.Backspace count={9} delay={1000} />
+              <spam className="Cursor--blinking">Developer</spam>
+            </Typist>
           </Col>
         </Row>
 
