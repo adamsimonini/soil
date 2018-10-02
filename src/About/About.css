@@ -198,10 +198,27 @@
               drop 4s 4.6s forwards;
   }
 
+  #menu-toggle{
+    display: none;
+  }
+
+  #nav-container{
+    width: 100%;
+  }
+
   @media (max-width: 575px) {
     .skill-col{
       margin-bottom: 20px;
     }
+    #menu-toggle{
+      display: unset;
+    }
+    .nav{
+      margin: auto;
+    }
+  }
+
+  @media (max-width: 1199px){
     #toolbox-row{
       height: 70%;
     }    

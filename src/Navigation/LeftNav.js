@@ -1,54 +1,66 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import { Nav, NavItem } from 'reactstrap';
 import Owl from '../images/owl.png';
 import './LeftNav.css';
+import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from 'reactstrap';
 
 
 export default class LeftNav extends React.Component {
 
-  openNav() {
-    document.getElementById("hamburger").style.display = "none";
-    document.getElementById("close").style.display = "unset";
-    document.getElementById("navBox").style.display = "unset";
+  constructor(props) {
+    super(props);
+
+    this.toggleNavbar = this.toggleNavbar.bind(this);
+    this.state = {
+      collapsed: false
+    };
   }
-  closeNav() {
-    document.getElementById("hamburger").style.display = "unset";
-    document.getElementById("close").style.display = "none";
-    document.getElementById("navBox").style.display = "none";
+
+  selected(){
+    console.log('selected: ' + this.value);
+    // this.setState({
+    //   selected: true
+    // });
+  }
+
+  toggleNavbar() {
+    this.setState({
+      collapsed: !this.state.collapsed
+    });
   }
 
   render() {
     return (
-
-        <Nav vertical>
-        	<span id="hamburger" onClick={this.openNav}>&#9776;</span>
-          <span id="close" onClick={this.closeNav}>X</span>
-          <div style={{ marginBottom: 10}}>
-          </div>
-          <div id="navBox">
-            <NavItem id="owl">
-              <Link style={{borderBottom: 0}} to="/">
-                <img id="owl" src={Owl} alt="Owl Logo"/>
-              </Link>
-            </NavItem>
-            <NavItem>
-              <Link to="/Featured">Featured</Link>
-            </NavItem>
-            <NavItem>
-              <Link to="/">About Me</Link>
-            </NavItem>
-            {/* <NavItem>
-              <Link to="/Work">Work Projects</Link>
-            </NavItem> */}
-            <NavItem>
-              <Link to="/WebApps">Apps</Link>
-            </NavItem>
-            <NavItem>
-              <Link to="/Hackathons">Hackathons</Link>
-            </NavItem>
-          </div>
-        </Nav>
+        <Navbar id="nav-container" color="faded" light>
+          <NavbarToggler id="menu-toggle" onClick={this.toggleNavbar} className="mr-2" />
+          <Collapse isOpen={!this.state.collapsed} navbar>
+            <Nav vertical>
+              <div style={{ marginBottom: 10}}></div>
+              <div id="navBox">
+                <NavItem id="owl">
+                  <Link style={{borderBottom: 0}} to="/">
+                    <img id="owl" src={Owl} alt="Owl Logo"/>
+                  </Link>
+                </NavItem>
+                <NavItem>
+                  <Link to="/Featured" onClick={this.selected} value="Featured">Featured</Link>
+                </NavItem>
+                <NavItem>
+                  <Link to="/" onClick={this.selected} value="About">About</Link>
+                </NavItem>
+                {/* <NavItem>
+                  <Link to="/Work">Work Projects</Link>
+                </NavItem> */}
+                <NavItem>
+                  <Link to="/WebApps" onClick={this.selected} value="Apps">Apps</Link>
+                </NavItem>
+                <NavItem>
+                  <Link to="/Hackathons" onClick={this.selected} value="Hackathons">Hackathons</Link>
+                </NavItem>
+              </div>
+            </Nav>
+          </Collapse>
+        </Navbar>
     );
   }
 }

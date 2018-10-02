@@ -66,7 +66,7 @@ export default class AboutMe extends Component{
               element: '|',
               hideWhenDone: true,
               hideWhenDoneDelay: 500,
-              }} startDelay={2000}
+              }} startDelay={1500}
             >
               <spam>Team player</spam>
               <Typist.Backspace count={11} delay={1500} />
@@ -78,7 +78,7 @@ export default class AboutMe extends Component{
         </Row>
 
         <Row>
-          <Col md="8" sm="12">
+          <Col xl="8" lg="12">
             <h3 className="about-title">Skills</h3>
             <div id="skill-box">
               <Row className="skill-row">
@@ -124,7 +124,7 @@ export default class AboutMe extends Component{
             </div>
           </Col>
 
-          <Col md="4" sm="12">
+          <Col xl="4" lg="12">
             <h3 className="about-title">Tool Box</h3>
             <Row id="toolbox-row">
               <Col className="tool-box" sm="12" xs="12">

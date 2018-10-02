@@ -51,6 +51,12 @@
         font-size: 20px;
     }
   }
+
+  #menu-toggle{
+    border: none;
+    color: black !important;
+    opacity: 1 !important;
+  }
   
   #navBox{
     flex-flow: column;
@@ -60,21 +66,8 @@
     width: 100%;
     font-family: 'Audiowide', cursive;
   }
-  #hamburger, #close{
-      position: absolute;
-      right: 10%;
-      top: 5%;
-      font-size: 25px;
-  }
-  #hamburger:hover, #close:hover{
-    cursor: pointer;
-  }
   #owl{
     width: 80px;
-  }
-  #close{
-      color: black;
-      display: none;
   }
 
   .nav li:first-child{
@@ -83,7 +76,6 @@
   
   @media (max-width: 575px) {
     #owl{
-      margin: 0 auto;
-      margin-bottom: 5vh;
+      display: none;
     }
   }
