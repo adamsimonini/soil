@@ -65,11 +65,11 @@ export default class AboutMe extends Component{
               blink: true,
               element: '|',
               hideWhenDone: true,
-              hideWhenDoneDelay: 1000,
+              hideWhenDoneDelay: 500,
               }} startDelay={2000}
             >
-              <spam>Teamplayer</spam>
-              <Typist.Backspace count={10} delay={1500} />
+              <spam>Team player</spam>
+              <Typist.Backspace count={11} delay={1500} />
               <spam>Creative</spam>
               <Typist.Backspace count={9} delay={1000} />
               <spam className="Cursor--blinking">Developer</spam>
