@@ -42,14 +42,14 @@ export default class AboutMe extends Component{
     const vscode = <i className="devicon-visualstudio-plain colored"></i>;
     const illustrator = <i className="devicon-illustrator-plain colored"></i>;
 
-    let start = 0;
-    function animate(max){
-      while (start < max){
-        console.log(start);
-        start++;
-      }
-      return start;
-    }
+    // let start = 0;
+    // function animate(max){
+    //   while (start < max){
+    //     console.log(start);
+    //     start++;
+    //   }
+    //   return start;
+    // }
 
     return (
       <div>
