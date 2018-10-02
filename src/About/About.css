@@ -4,10 +4,11 @@
 }
 
 #skill-box{
-    max-width: 800px;
+    max-width: 1000px;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 20px;
+    padding: 0 5%;
 }
 
 .skill-row{
@@ -24,6 +25,11 @@
 
 #skill-box i{
     font-size: 60px;
+}
+
+#toolbox-row{
+  height: 85%;
+  align-items: center;
 }
 
 #full-name{
@@ -196,4 +202,7 @@
     .skill-col{
       margin-bottom: 20px;
     }
+    #toolbox-row{
+      height: 70%;
+    }    
   }

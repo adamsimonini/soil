@@ -59,74 +59,84 @@ export default class AboutMe extends Component{
           </Col>
           <Col id="full-name" sm="6" xs="12">
             <h1>Adam Simonini</h1>
+            <p>Developer. Teamplayer. Father.</p>
           </Col>
         </Row>
-        <h3 className="about-title">Skills</h3>
-        <div id="skill-box">
-        <Row className="skill-row">
-          <Col className="skill-col" xs="12" sm="6">
-            <span>{html} 90%</span>
-            <Progress animated striped color='success' value={this.state.skills[0].level} />
-          </Col>
-          <Col className="skill-col" xs="12" sm="6">
-            <span>{css} 90%</span>
-            <Progress animated striped color='success' value={90} />
-          </Col>
-        </Row>
-        <Row className="skill-row">
-          <Col className="skill-col" xs="12" sm="6">
-            <span>{bootstrap} 90%</span>
-            <Progress animated striped color='success' value={90} />
-          </Col>
-          <Col className="skill-col" xs="12" sm="6">
-            <span>{javascript} 80%</span>
-            <Progress animated striped color='success' value={80} />
-          </Col>
-        </Row>
-        <Row className="skill-row">
-          <Col className="skill-col" xs="12" sm="6">
-            <span>{jquery} 80%</span>
-            <Progress animated striped color='success' value={80} />
-          </Col>
-          <Col className="skill-col" xs="12" sm="6">
-            <span>{react} 70%</span>
-            <Progress animated striped color='primary' value={70} />
-          </Col>
-        </Row>
-        <Row className="skill-row">
-          <Col className="skill-col" xs="12" sm="6">
-            <span>{wordpress} 70%</span>
-            <Progress animated striped color='primary' value={70} />
-          </Col>
-          <Col className="skill-col" xs="12" sm="6">
-            <span>{php} 50%</span>
-            <Progress animated striped color='warning' value={50} />
-          </Col>
-        </Row>
-        </div>
-        <h3 className="about-title">Tool Box</h3>
+
         <Row>
-          <Col className="tool-box" sm="6" xs="12">
-            {git}
-            {github}
-            {chrome}
+          <Col md="8" sm="12">
+            <h3 className="about-title">Skills</h3>
+            <div id="skill-box">
+              <Row className="skill-row">
+                <Col className="skill-col" xs="12" sm="6">
+                  <span>{html} 90%</span>
+                  <Progress animated striped color='success' value={this.state.skills[0].level} />
+                </Col>
+                <Col className="skill-col" xs="12" sm="6">
+                  <span>{css} 90%</span>
+                  <Progress animated striped color='success' value={90} />
+                </Col>
+              </Row>
+              <Row className="skill-row">
+                <Col className="skill-col" xs="12" sm="6">
+                  <span>{bootstrap} 90%</span>
+                  <Progress animated striped color='success' value={90} />
+                </Col>
+                <Col className="skill-col" xs="12" sm="6">
+                  <span>{javascript} 80%</span>
+                  <Progress animated striped color='success' value={80} />
+                </Col>
+              </Row>
+              <Row className="skill-row">
+                <Col className="skill-col" xs="12" sm="6">
+                  <span>{jquery} 80%</span>
+                  <Progress animated striped color='success' value={80} />
+                </Col>
+                <Col className="skill-col" xs="12" sm="6">
+                  <span>{react} 70%</span>
+                  <Progress animated striped color='primary' value={70} />
+                </Col>
+              </Row>
+              <Row className="skill-row">
+                <Col className="skill-col" xs="12" sm="6">
+                  <span>{wordpress} 70%</span>
+                  <Progress animated striped color='primary' value={70} />
+                </Col>
+                <Col className="skill-col" xs="12" sm="6">
+                  <span>{php} 50%</span>
+                  <Progress animated striped color='warning' value={50} />
+                </Col>
+              </Row>
+            </div>
           </Col>
-          <Col className="tool-box" sm="6" xs="12">
-            {vscode}
-            {illustrator}
-            {grunt}
+
+          <Col md="4" sm="12">
+            <h3 className="about-title">Tool Box</h3>
+            <Row id="toolbox-row">
+              <Col className="tool-box" sm="12" xs="12">
+                {git}
+                {github}
+                {chrome}
+              </Col>
+              <Col className="tool-box" sm="12" xs="12">
+                {vscode}
+                {illustrator}
+                {grunt}
+              </Col>
+            </Row>
           </Col>
         </Row>
+
         <h3 className="about-title">Formal Education</h3>
         <div id="education-box">
           <Row className="skill-row">
             <Col className="skill-col" xs="12" sm="6">
               <img alt="University of Toronto" src={require('../images/toronto.png')}/>
-              <p>B.A. 2010</p>
+              <p><strong>B.A. 2010</strong></p>
             </Col>
             <Col className="skill-col" xs="12" sm="6">
               <img alt="Ryerson University" src={require('../images/ryerson.png')}/>
-              <p>M.A. 2013</p>
+              <p><strong>M.A. 2013</strong></p>
             </Col>
           </Row>
           <h3 className="about-title">Connect</h3>

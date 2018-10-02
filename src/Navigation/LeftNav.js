@@ -33,7 +33,7 @@ export default class LeftNav extends React.Component {
               </Link>
             </NavItem>
             <NavItem>
-              <Link to="/Featured">Featured Projects</Link>
+              <Link to="/Featured">Featured</Link>
             </NavItem>
             <NavItem>
               <Link to="/">About Me</Link>
@@ -42,7 +42,7 @@ export default class LeftNav extends React.Component {
               <Link to="/Work">Work Projects</Link>
             </NavItem> */}
             <NavItem>
-              <Link to="/WebApps">Web Apps</Link>
+              <Link to="/WebApps">Apps</Link>
             </NavItem>
             <NavItem>
               <Link to="/Hackathons">Hackathons</Link>
