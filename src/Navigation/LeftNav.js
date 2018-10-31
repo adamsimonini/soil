@@ -36,7 +36,8 @@ export default class LeftNav extends React.Component {
           <Collapse isOpen={!this.state.collapsed} navbar>
             <Nav vertical>
               <div style={{ marginBottom: 10}}></div>
-              <div id="navBox">
+
+                <ol id="navBox">
                 <NavItem id="owl">
                   <Link style={{borderBottom: 0}} to="/">
                     <img id="owl" src={Owl} alt="Owl-logo"/>
@@ -57,7 +58,8 @@ export default class LeftNav extends React.Component {
                 <NavItem>
                   <Link to="/Hackathons" onClick={this.selected} value="Hackathons">Hackathons</Link>
                 </NavItem>
-              </div>
+                </ol>
+
             </Nav>
           </Collapse>
         </Navbar>

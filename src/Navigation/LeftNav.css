@@ -65,6 +65,7 @@
     height: 100vh;
     width: 100%;
     font-family: 'Audiowide', cursive;
+    list-style-type: none;
   }
   #owl{
     width: 80px;
