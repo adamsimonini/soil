@@ -56,7 +56,7 @@ export default class AboutMe extends Component{
       <div>
         <Row>
           <Col sm="6" xs="12">
-            <img className='headshot' alt="Photo of Adam Simonini" src={require('../images/headshot.png')} />
+            <img className='headshot' alt="Photo of Adam Simonini" src={require('../images/headshot-min.png')} />
           </Col>
           <Col id="full-name" sm="6" xs="12">
             <h1>Adam Simonini</h1>
@@ -145,7 +145,7 @@ export default class AboutMe extends Component{
         <div id="education-box">
           <Row className="skill-row">
             <Col className="skill-col" xs="12" sm="6">
-              <img alt="University of Toronto" src={require('../images/toronto.png')}/>
+              <img alt="University of Toronto" src={require('../images/toronto-min.png')}/>
               <p><strong>B.A. 2010</strong></p>
             </Col>
             <Col className="skill-col" xs="12" sm="6">
