@@ -79,7 +79,7 @@ export default class AboutMe extends Component{
 
         <Row>
           <Col xl="8" lg="12">
-            <h3 className="about-title">Skills</h3>
+            <h2 className="about-title">Skills</h2>
             <div id="skill-box">
               <Row className="skill-row">
                 <Col className="skill-col" xs="12" sm="6">
@@ -125,7 +125,7 @@ export default class AboutMe extends Component{
           </Col>
 
           <Col xl="4" lg="12">
-            <h3 className="about-title">Tool Box</h3>
+            <h2 className="about-title">Tool Box</h2>
             <Row id="toolbox-row">
               <Col className="tool-box" sm="12" xs="12">
                 {git}
@@ -141,7 +141,7 @@ export default class AboutMe extends Component{
           </Col>
         </Row>
 
-        <h3 className="about-title">Formal Education</h3>
+        <h2 className="about-title">Formal Education</h2>
         <div id="education-box">
           <Row className="skill-row">
             <Col className="skill-col" xs="12" sm="6">
@@ -153,7 +153,7 @@ export default class AboutMe extends Component{
               <p><strong>M.A. 2013</strong></p>
             </Col>
           </Row>
-          <h3 className="about-title">Connect</h3>
+          <h2 className="about-title">Connect</h2>
           <div className="tool-box">
             <a className="media-icons" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/adamsimonini">
               <img alt="LinkedIn" src={require('../images/linkedin.png')}/>
