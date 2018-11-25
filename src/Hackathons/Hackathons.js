@@ -24,7 +24,7 @@ export default class Hackathons extends Component{
             <h2>Gift The Code 2018 (upcoming)</h2>
             <img className="hack-image" alt="Gift The Code 2018" src={require('../images/hackathons/gtc18.jpg')} />
             <p>Outcome:</p>
-            <p>pending...</p>
+            <img className="hack-image" alt="Gold" src={require('../images/trophy/gold.png')} />
           </Col>
           <Col xs="12" sm="6" className="hack-col">
             <h2>Hack to Give Back (2018)</h2>
