@@ -56,7 +56,7 @@ export default class AboutMe extends Component{
       <div>
         <Row>
           <Col sm="6" xs="12">
-            <img className='headshot' alt="Photo of Adam Simonini" src={require('../images/headshot-min.png')} />
+            <img className='headshot' alt="Adam Simonini" src={require('../images/headshot-min.png')} />
           </Col>
           <Col id="full-name" sm="6" xs="12">
             <h1>Adam Simonini</h1>
